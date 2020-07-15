@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import AppIcon from 'cozy-ui/react/AppIcon'
-import { translate } from 'cozy-ui/react/I18n'
+import AppIcon from 'cozy-ui/transpiled/react/AppIcon'
+import { translate } from 'cozy-ui/transpiled/react/I18n'
 import styles from './SmallAppItem.styl'
 
 import { getCurrentStatusLabel } from '../status'
