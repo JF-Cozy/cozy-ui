@@ -26055,7 +26055,7 @@ html,
 }
 
 .DialogCloseButton--AaSYL {
-  top: 0.8125rem;
+  top: 0.83rem;
   right: 1.5rem;
   background-color: transparent;
   margin: 0;
@@ -26068,18 +26068,8 @@ html,
 }
 @media (max-width: 48rem) {
   .DialogCloseButton--AaSYL {
-    top: 0rem;
+    top: 0.35rem;
     right: 0.5rem;
-  }
-}
-.DialogTitle--3Cv_Q {
-  margin-top: -1.5rem;
-  height: 4rem;
-}
-@media (max-width: 48rem) {
-  .DialogTitle--3Cv_Q {
-    margin-top: -1rem;
-    height: 3rem;
   }
 }
 
