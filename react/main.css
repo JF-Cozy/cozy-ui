@@ -9832,6 +9832,53 @@ body {
   color: var(--coolGrey);
 }
 
+.c-circle--1DuMR {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  background-color: var(--dodgerBlue);
+  color: var(--white);
+  font-size: 1.125rem;
+}
+.c-circle--xsmall--aEyBX {
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  font-size: 0.438rem;
+}
+.c-circle--small--3uPhB {
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+}
+.c-circle--large--3jQ-U {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  font-size: 1.313rem;
+}
+.c-circle--xlarge--11jP5 {
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+  font-size: 1.688rem;
+}
+.c-circle-text--1jFgD {
+  font-weight: bold;
+  line-height: 1;
+}
+
 .u-p-0 {
   padding: 0 !important;
 }
@@ -12475,53 +12522,6 @@ html,
 }
 .CompositeRow__body--3nEEv > * + * {
   margin-top: 2px;
-}
-
-.c-circle--1DuMR {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 2.5rem;
-  height: 2.5rem;
-  min-width: 2.5rem;
-  min-height: 2.5rem;
-  background-color: var(--dodgerBlue);
-  color: var(--white);
-  font-size: 1.125rem;
-}
-.c-circle--xsmall--aEyBX {
-  width: 1rem;
-  height: 1rem;
-  min-width: 1rem;
-  min-height: 1rem;
-  font-size: 0.438rem;
-}
-.c-circle--small--3uPhB {
-  width: 2rem;
-  height: 2rem;
-  min-width: 2rem;
-  min-height: 2rem;
-  font-size: 0.875rem;
-}
-.c-circle--large--3jQ-U {
-  width: 3rem;
-  height: 3rem;
-  min-width: 3rem;
-  min-height: 3rem;
-  font-size: 1.313rem;
-}
-.c-circle--xlarge--11jP5 {
-  width: 4rem;
-  height: 4rem;
-  min-width: 4rem;
-  min-height: 4rem;
-  font-size: 1.688rem;
-}
-.c-circle-text--1jFgD {
-  font-weight: bold;
-  line-height: 1;
 }
 
 .c-DropdownButton--1JXUA {
@@ -26055,7 +26055,7 @@ html,
 }
 
 .DialogCloseButton--AaSYL {
-  top: 0.83rem;
+  top: 0.8125rem;
   right: 1.5rem;
   background-color: transparent;
   margin: 0;
@@ -26068,8 +26068,18 @@ html,
 }
 @media (max-width: 48rem) {
   .DialogCloseButton--AaSYL {
-    top: 0.35rem;
+    top: 0rem;
     right: 0.5rem;
+  }
+}
+.DialogTitle--3Cv_Q {
+  margin-top: -1.5rem;
+  height: 4rem;
+}
+@media (max-width: 48rem) {
+  .DialogTitle--3Cv_Q {
+    margin-top: -1rem;
+    height: 3rem;
   }
 }
 
