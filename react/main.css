@@ -8729,6 +8729,13 @@ body {
   font-weight: bold;
   line-height: 1;
 }
+.c-avatar--disabled--xoLOy {
+  background-color: var(--silver);
+}
+.c-avatar--disabled--xoLOy .c-avatar-image--3yJnb {
+  filter: grayscale(1);
+  opacity: 0.32;
+}
 
 @-moz-keyframes spin--alZ_V {
   from {
@@ -26973,15 +26980,31 @@ html,
 }
 
 .DialogCloseButton--AaSYL {
+  top: 0.8125rem;
+  right: 1.5rem;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
   position: absolute;
-  right: 13px;
-  top: 13px;
-  background-color: #fff;
+  border: 0;
+  cursor: pointer;
 }
 @media (max-width: 48rem) {
   .DialogCloseButton--AaSYL {
-    right: 0;
-    top: 0;
+    top: 0rem;
+    right: 0.5rem;
+  }
+}
+.DialogTitle--3Cv_Q {
+  margin-top: -1.5rem;
+  height: 4rem;
+}
+@media (max-width: 48rem) {
+  .DialogTitle--3Cv_Q {
+    margin-top: -1rem;
+    height: 3rem;
   }
 }
 
