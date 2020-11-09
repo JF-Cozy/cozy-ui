@@ -8675,6 +8675,8 @@ body {
 .c-avatar--PpDI- {
   background-color: var(--paleGrey);
   color: var(--silver);
+  position: relative;
+  z-index: 1;
 }
 .c-avatar--PpDI- svg {
   width: 50%;
@@ -8704,6 +8706,13 @@ body {
   min-height: 1rem;
   font-size: 0.438rem;
 }
+.c-avatar--smaller--rhawx {
+  width: 1.5rem;
+  height: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  font-size: 0.688rem;
+}
 .c-avatar--small--1Y_Pv {
   width: 2rem;
   height: 2rem;
@@ -8729,8 +8738,14 @@ body {
   font-weight: bold;
   line-height: 1;
 }
-.c-avatar--disabled--xoLOy {
-  background-color: var(--silver);
+.c-avatar--text--2dvna {
+  color: #fff;
+}
+.c-avatar--disabled--xoLOy.c-avatar--image--jDBci {
+  background-color: #fff !important;
+}
+.c-avatar--disabled--xoLOy:not(.c-avatar--image--jDBci) {
+  background-color: var(--silver) !important;
 }
 .c-avatar--disabled--xoLOy .c-avatar-image--3yJnb {
   filter: grayscale(1);
@@ -9859,6 +9874,13 @@ body {
   min-width: 1rem;
   min-height: 1rem;
   font-size: 0.438rem;
+}
+.c-circle--smaller--3vOlM {
+  width: 1.5rem;
+  height: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  font-size: 0.688rem;
 }
 .c-circle--small--3uPhB {
   width: 2rem;
@@ -20567,6 +20589,19 @@ html {
   height: 0.5rem;
 }
 
+.DialogCloseButton--cxKPO {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  background-color: #fff;
+}
+@media (max-width: 48rem) {
+  .DialogCloseButton--cxKPO {
+    right: 0;
+    top: 0;
+  }
+}
+
 :root {
   --invertedBackgroundColor: var(--primaryColor);
   --invertedContrastTextColor: var(--primaryContrastTextColor);
@@ -26976,35 +27011,6 @@ html,
   }
   .Panel-side--327EK {
     flex-basis: auto;
-  }
-}
-
-.DialogCloseButton--AaSYL {
-  top: 0.8125rem;
-  right: 1.5rem;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  border: 0;
-  cursor: pointer;
-}
-@media (max-width: 48rem) {
-  .DialogCloseButton--AaSYL {
-    top: 0rem;
-    right: 0.5rem;
-  }
-}
-.DialogTitle--3Cv_Q {
-  margin-top: -1.5rem;
-  height: 4rem;
-}
-@media (max-width: 48rem) {
-  .DialogTitle--3Cv_Q {
-    margin-top: -1rem;
-    height: 3rem;
   }
 }
 
