@@ -8676,7 +8676,7 @@ body {
   background-color: var(--paleGrey);
   color: var(--silver);
   position: relative;
-  z-index: 1;
+  z-index: $low-index;
 }
 .c-avatar--PpDI- svg {
   width: 50%;
@@ -8705,13 +8705,6 @@ body {
   min-width: 1rem;
   min-height: 1rem;
   font-size: 0.438rem;
-}
-.c-avatar--smaller--rhawx {
-  width: 1.5rem;
-  height: 1.5rem;
-  min-width: 1.5rem;
-  min-height: 1.5rem;
-  font-size: 0.688rem;
 }
 .c-avatar--small--1Y_Pv {
   width: 2rem;
@@ -9874,13 +9867,6 @@ body {
   min-width: 1rem;
   min-height: 1rem;
   font-size: 0.438rem;
-}
-.c-circle--smaller--3vOlM {
-  width: 1.5rem;
-  height: 1.5rem;
-  min-width: 1.5rem;
-  min-height: 1.5rem;
-  font-size: 0.688rem;
 }
 .c-circle--small--3uPhB {
   width: 2rem;
