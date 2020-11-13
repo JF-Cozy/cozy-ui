@@ -12758,6 +12758,12 @@ html,
   height: 5px;
 }
 
+.c-progressionBanner--linearProgress--1fHfH {
+  background-color: 'transparent';
+  height: 0.125rem;
+  margin-top: -0.125rem;
+}
+
 html {
 /*
     Grey
