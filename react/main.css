@@ -8767,15 +8767,26 @@ body {
 }
 
 .c-banner-wrapper--3KlaG {
-  padding: 1rem 0.5rem 1rem;
+  display: flex;
+  align-items: 'center';
+  min-height: 3.5rem;
+  padding: 0 1rem 0 2rem;
+}
+@media (max-width: 48rem) {
+  .c-banner-wrapper--3KlaG {
+    padding: 0 0 0 1rem;
+  }
 }
 .c-banner-icon--1f_LM {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
-.c-banner-icon--1f_LM svg {
-  width: 100%;
-  height: 100%;
+.c-banner-text--1sTVC {
+  padding: 0.75rem 1rem;
+}
+.c-banner-buttons--3sLgG button {
+  margin: 0;
+  min-width: 3rem;
 }
 
 @-moz-keyframes spin--alZ_V {
