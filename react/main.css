@@ -8770,16 +8770,27 @@ body {
   display: flex;
   align-items: 'center';
   min-height: 3.5rem;
-  padding: 0 1rem 0 2rem;
+  padding: 0 1rem;
 }
 @media (max-width: 48rem) {
   .c-banner-wrapper--3KlaG {
-    padding: 0 0 0 1rem;
+    padding: 0;
   }
 }
 .c-banner-icon--1f_LM {
   width: 2rem;
   height: 2rem;
+  margin-left: 1rem;
+}
+.c-banner-icon--1f_LM > svg {
+  width: 2rem;
+  height: 2rem;
+}
+.c-banner-icon--1f_LM div {
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
 }
 .c-banner-text--1sTVC {
   padding: 0.75rem 1rem;
