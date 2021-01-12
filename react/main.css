@@ -29387,7 +29387,7 @@ html {
   max-height: 70%;
   overflow: auto;
 }
-.viewer-textviewer--cISlz a {
+.viewer-textviewer--cISlz .viewer-textviewer-content--q2RzR a {
   color: var(--azure);
 }
 @media (max-width: 63.938rem) {
