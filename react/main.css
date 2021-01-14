@@ -885,8 +885,8 @@ body {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -1392,8 +1392,8 @@ body {
 .u-bg-danger {
   background-color: var(--dangerColor) !important;
 }
-.u-bg-errorBackgroundLight {
-  background-color: var(--errorBackgroundLight) !important;
+.u-bg-errorBackground {
+  background-color: var(--errorBackground) !important;
 }
 .u-bg-primaryBackgroundLight {
   background-color: var(--primaryBackgroundLight) !important;
@@ -1679,7 +1679,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -1689,6 +1689,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .u-card--1wcLU {
   border: 0.063rem solid var(--dividerColor);
@@ -6468,7 +6474,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -6478,6 +6484,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 :root {
   --invertedBackgroundColor: var(--primaryColor);
@@ -6509,7 +6521,7 @@ html,
   --defaultBackgroundColor: var(--primaryColorDark);
   --dividerColor: var(--primaryColorDark);
   --dividerColor2: var(--primaryColorDark);
-  --errorBackgroundLight: #530404;
+  --errorBackground: #530404;
 }
 
 /*------------------------------------*  Palette
@@ -6702,7 +6714,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -6712,6 +6724,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 
 @-moz-keyframes spin--alZ_V {
@@ -7099,8 +7117,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -8392,8 +8410,8 @@ body {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -9016,7 +9034,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -9026,6 +9044,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 @-moz-keyframes spin--lXiub {
   from {
@@ -9412,8 +9436,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -12687,7 +12711,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -12697,6 +12721,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .c-chip--2aPqg {
   box-sizing: border-box;
@@ -12964,7 +12994,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -12974,6 +13004,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .c-card--YgP7B {
   border: 0.063rem solid var(--dividerColor);
@@ -13233,7 +13269,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -13243,6 +13279,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 @-moz-keyframes spin--3Lqkt {
   from {
@@ -13743,8 +13785,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -14304,7 +14346,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -14314,6 +14356,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .c-input-checkbox--svg--3YMZN span::after {
   display: none;
@@ -14818,8 +14866,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -15555,8 +15603,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -16254,8 +16302,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -16995,8 +17043,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -17486,7 +17534,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -17496,6 +17544,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .select-control__input--1xDlj {
   width: 0;
@@ -17971,8 +18025,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -18342,8 +18396,8 @@ html,
 }
 @media (max-width: 48rem) {
   .DialogCloseButton--cxKPO {
-    right: 10px;
-    top: 10px;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -18732,8 +18786,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -19654,8 +19708,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -20429,8 +20483,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -21417,8 +21471,8 @@ body {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -22075,7 +22129,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -22085,6 +22139,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 html {
   --zIndex-below: -1;
@@ -22466,7 +22526,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -22476,6 +22536,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 @-moz-keyframes spin--1MUwn {
   from {
@@ -22862,8 +22928,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -23402,7 +23468,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -23412,6 +23478,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .c-accordion--1VRom {
   padding: 0;
@@ -24049,8 +24121,8 @@ body {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -24724,7 +24796,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -24734,6 +24806,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .Infos--2ZZVs {
   position: relative;
@@ -24752,7 +24830,7 @@ html,
   background-color: var(--neutralBackground);
 }
 .Infos--2ZZVs.Infos--danger--3wKYc {
-  background-color: var(--errorBackgroundLight);
+  background-color: var(--errorBackground);
 }
 .Infos-description--7P1NP {
   max-width: 32rem;
@@ -24940,7 +25018,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -24950,6 +25028,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .InfosCarrousel--3rCyB {
   position: relative;
@@ -25149,7 +25233,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -25159,6 +25243,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 html {
   --zIndex-below: -1;
@@ -25560,8 +25650,8 @@ html {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -25912,7 +26002,6 @@ html {
   right: 0;
   bottom: calc(3rem + env(safe-area-inset-bottom));
   left: 0;
-  color: var(--white);
   opacity: 1;
   transition: transform 0.2s ease-out, opacity 0.2s ease-out;
   cursor: default;
@@ -25943,7 +26032,6 @@ html {
   box-sizing: border-box;
   width: 100%;
   box-shadow: 0 0.375rem 1.125rem 0 rgba(50,54,63,0.23);
-  background-color: var(--validColor);
   padding: 0.813rem 1rem;
   pointer-events: auto;
 }
@@ -25977,13 +26065,16 @@ html {
   font-weight: bold;
 }
 .c-alert--error--oA-NC {
-  background-color: var(--errorColor);
+  color: var(--alertErrorColor);
+  background-color: var(--alertErrorBackgroundColor);
 }
 .c-alert--success--1Cs5b {
-  background-color: var(--validColor);
+  color: var(--alertSuccessColor);
+  background-color: var(--alertSuccessBackgroundColor);
 }
 .c-alert--info--3mqAh {
-  background-color: var(--slateGrey);
+  color: var(--alertInfoColor);
+  background-color: var(--alertInfoBackgroundColor);
 }
 
 .OrderedList--17A_o {
@@ -26581,8 +26672,8 @@ body {
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -28064,7 +28155,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -28074,6 +28165,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 .c-inline-card--1sri1 {
   display: inline-block;
@@ -28467,8 +28564,8 @@ html,
 .u-danger {
   color: var(--dangerColor) !important;
 }
-.u-errorBackgroundLight {
-  color: var(--errorBackgroundLight) !important;
+.u-errorBackground {
+  color: var(--errorBackground) !important;
 }
 .u-primaryBackgroundLight {
   color: var(--primaryBackgroundLight) !important;
@@ -29047,7 +29144,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -29057,6 +29154,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 html {
   --zIndex-below: -1;
@@ -31868,7 +31971,7 @@ html,
   --textIconColor: var(--charcoalGrey);
   --actionMenuIconColor: var(--slateGrey);
   --errorColor: #f52d2d;
-  --errorBackgroundLight: #fff2f2;
+  --errorBackground: #fff2f2;
   --validColor: #35ce68;
   --warnColor: #ff962f;
   --dangerColor: #f52d2d;
@@ -31878,6 +31981,12 @@ html,
   --navTextColor: var(--slateGrey);
   --navTextActiveColor: var(--slateGrey);
   --navTextHoverColor: var(--charcoalGrey);
+  --alertErrorColor: #fff;
+  --alertErrorBackgroundColor: var(--errorColor);
+  --alertSuccessColor: #fff;
+  --alertSuccessBackgroundColor: var(--validColor);
+  --alertInfoColor: #fff;
+  --alertInfoBackgroundColor: var(--slateGrey);
 }
 @-moz-keyframes spin--3GZIp {
   from {
@@ -32068,7 +32177,7 @@ progress.upload-queue-progress--1CmN- {
   flex-direction: column;
 }
 .upload-queue-item--error--2sSeV {
-  background-color: var(--errorBackgroundLight);
+  background-color: var(--errorBackground);
 }
 .upload-queue-item--done--2PSJI {
   background-color: var(--defaultBackgroundColor);
