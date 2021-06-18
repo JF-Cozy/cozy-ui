@@ -1494,11 +1494,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -6293,11 +6293,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -6380,8 +6380,8 @@ html,
   --warningColor: #ffe0c1;
   --paperBackgroundColor: var(--primaryColor);
   --defaultBackgroundColor: var(--primaryColorDark);
-  --dividerColor: var(--primaryColorDark);
-  --dividerColor2: var(--primaryColorDark);
+  --dividerColor: rgba(255,255,255,0.16);
+  --dividerColor2: rgba(255,255,255,0.16);
   --errorBackground: #530404;
 }
 
@@ -6558,11 +6558,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -8735,11 +8735,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -12341,11 +12341,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -12625,11 +12625,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -12711,6 +12711,19 @@ html,
 .c-DropdownButton-Icon--ohvD2 {
   margin-top: 0.25rem;
   margin-left: 0.25rem;
+}
+
+.DialogCloseButton--cxKPO {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: var(--zIndex-modal);
+}
+@media (max-width: 48rem) {
+  .DialogCloseButton--cxKPO {
+    top: 0.25rem;
+    right: 0.25rem;
+  }
 }
 
 .IconStack-wrapper--10dhG {
@@ -12873,11 +12886,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -13879,11 +13892,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -14027,19 +14040,6 @@ html,
 }
 .DateMonthPicker__MonthButton--3I_Mm.DateMonthPicker__MonthButton--selected--40hCm {
   font-weight: bold;
-}
-
-.DialogCloseButton--cxKPO {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  z-index: var(--zIndex-modal);
-}
-@media (max-width: 48rem) {
-  .DialogCloseButton--cxKPO {
-    top: 0.25rem;
-    right: 0.25rem;
-  }
 }
 
 @-moz-keyframes spin--2YilK {
@@ -16766,11 +16766,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -19843,17 +19843,6 @@ html {
 @media (max-width: 48rem) {
 }
 
-.Modal__back--qxUn_ {
-  cursor: pointer;
-  margin-right: 0.5rem;
-  margin-left: -0.25rem;
-  font-size: 1.5rem;
-  line-height: 0;
-  margin-bottom: -1rem;
-  position: relative;
-  top: -0.5rem;
-}
-
 .media--cSJMp {
   display: flex;
   align-items: center;
@@ -19871,6 +19860,17 @@ html {
 .img--3SHpG {
   line-height: 0;
   flex: 0 0 auto;
+}
+
+.Modal__back--qxUn_ {
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-left: -0.25rem;
+  font-size: 1.5rem;
+  line-height: 0;
+  margin-bottom: -1rem;
+  position: relative;
+  top: -0.5rem;
 }
 
 .Hero--14z7_ {
@@ -20781,6 +20781,9 @@ body {
   }
 }
 
+:root {
+  --sidebarHeight: 3rem;
+}
 .o-sidebar--1295j {
   width: 13.75rem;
   border-right: 0.063rem solid var(--dividerColor);
@@ -20791,7 +20794,7 @@ body {
     justify-content: space-between;
     border: 0;
     border-top: 0.063rem solid var(--dividerColor);
-    height: 3rem;
+    height: var(--sidebarHeight);
     width: 100%;
     padding-bottom: env(safe-area-inset-bottom);
   }
@@ -20929,11 +20932,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -21327,11 +21330,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -23246,11 +23249,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -23466,11 +23469,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -23682,11 +23685,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -26131,7 +26134,7 @@ html {
   .Tile-title--3gbq- {
     height: 1rem;
     font-weight: normal;
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
   }
   .Tile-title--3gbq-,
   .Tile-developer--2GOfB,
@@ -26154,6 +26157,24 @@ html {
 .AppTile-icon--default--1tjiF {
   height: 100%;
   padding: 0 0.5em;
+}
+.AppTile-icon-maintenance--2VOvO {
+  position: absolute;
+  border: 2px solid var(--primaryContrastTextColor);
+  border-radius: 50%;
+  background: var(--primaryContrastTextColor);
+  bottom: 80px;
+  left: 80px;
+}
+@media (max-width: 48rem) {
+  .AppTile-icon-maintenance--2VOvO {
+    bottom: 6px;
+    left: 40px;
+  }
+}
+.AppTile-container-maintenance--u1a1M {
+  filter: grayscale(1);
+  opacity: 0.64;
 }
 
 .Sections__section--2onYy {
@@ -26325,11 +26346,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -27243,11 +27264,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
@@ -30077,11 +30098,11 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #D6D8Da, CSS: var(--dividerColor)
+    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
-  --dividerColor: #d6d8da;
+  --dividerColor: rgba(29,33,42,0.122);
 /*
     Intention colors
 
