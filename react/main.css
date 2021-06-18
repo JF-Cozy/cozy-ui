@@ -1494,7 +1494,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -6293,7 +6296,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -6558,7 +6564,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -8735,7 +8744,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -12341,7 +12353,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -12625,7 +12640,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -12886,7 +12904,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -13892,7 +13913,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -16766,7 +16790,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -20932,7 +20959,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -21330,7 +21360,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -23249,7 +23282,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -23469,7 +23505,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -23685,7 +23724,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -26346,7 +26388,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -27264,7 +27309,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
@@ -30098,7 +30146,10 @@ html,
 /*
     Components colors
 
-    Stylus: dividerColor -  #1D212A1F, CSS: var(--dividerColor)
+    Be careful to use the semantic variable, not the hexa color.
+    In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
+
+    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
 
     Styleguide Settings.theme.components
     */
