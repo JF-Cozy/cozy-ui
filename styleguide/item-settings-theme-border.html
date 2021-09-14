@@ -87,27 +87,45 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-3" id="kssref-settings-theme-components">
+            <header class="kss-section kss-section--depth-3" id="kssref-settings-theme-border">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-settings-theme-components">
+              <a class="kss-section__permalink" href="#kssref-settings-theme-border">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">1.5.2</span>
-                  <span class="kss-section__name">Components colors</span>
+                  <span class="kss-section__ref">1.5.3</span>
+                  <span class="kss-section__name">Border colors</span>
                 </h3>
               </a>
 
-                <div class="kss-section__description"><p>Be careful to use the semantic variable, not the hexa color.
-In this case the real color is <code>#1D212A1F</code>, and becomes <code>#E3E4E5</code> on a white background.</p>
+                <div class="kss-section__description"><p>These colors use the alpha layer. Be careful to use the semantic variable.
+Hexadecimal colors are here only as an example on a white background.</p>
 </div>
 
                 <div class="kss-parameters__title">Parameters:</div>
                 <ul class="kss-parameters">
                   <li class="kss-parameters__item">
-                    <div class="kss-parameters__name"><code>Stylus: dividerColor</code></div>
+                    <div class="kss-parameters__name"><code>Stylus: borderMainColor</code></div>
                     <div class="kss-parameters__description">
-                      #E3E4E5, CSS: var(--dividerColor)
+                      #DFE0E0, CSS: var(--borderMainColor)
+                    </div>
+                  </li>
+                  <li class="kss-parameters__item">
+                    <div class="kss-parameters__name"><code>Stylus: borderDisabledColor</code></div>
+                    <div class="kss-parameters__description">
+                      #EFEFF0, CSS: var(--borderDisabledColor)
+                    </div>
+                  </li>
+                  <li class="kss-parameters__item">
+                    <div class="kss-parameters__name"><code>Stylus: borderGhostColor</code></div>
+                    <div class="kss-parameters__description">
+                      #9D9EA1, CSS: var(--borderGhostColor)
+                    </div>
+                  </li>
+                  <li class="kss-parameters__item">
+                    <div class="kss-parameters__name"><code>Stylus: borderGhostDisabledColor</code></div>
+                    <div class="kss-parameters__description">
+                      #DFE0E0, CSS: var(--borderGhostDisabledColor)
                     </div>
                   </li>
                 </ul>
