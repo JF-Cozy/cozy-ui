@@ -1362,6 +1362,78 @@ body {
 .u-bxz {
   box-sizing: border-box;
 }
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--1I3Ps {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -6289,333 +6361,11 @@ body {
   overflow: auto;
 }
 
-html {
-/*
-    Grey
-
-    Stylus: grey0        -  #FFFFFF, CSS: var(--grey0)
-    Stylus: grey50       -  #f9fafb, CSS: var(--grey50)
-    Stylus: grey100      -  #f4f5f6, CSS: var(--grey100)
-    Stylus: grey200      -  #eceff1, CSS: var(--grey200)
-    Stylus: grey300      -  #dde0e3, CSS: var(--grey300)
-    Stylus: grey400      -  #bfc3c7, CSS: var(--grey400)
-    Stylus: grey500      -  #9da2a6, CSS: var(--grey500)
-    Stylus: grey600      -  #7c8086, CSS: var(--grey600)
-    Stylus: grey700      -  #5d6169, CSS: var(--grey700)
-    Stylus: grey800      -  #3e424a, CSS: var(--grey800)
-    Stylus: grey900      -  #1d212a, CSS: var(--grey900)
-    Stylus: greyA100     -  #d3d6d8, CSS: var(--greyA100)
-    Stylus: greyA200     -  #a7abaf, CSS: var(--greyA200)
-    Stylus: greyA400     -  #2c3039, CSS: var(--greyA400)
-    Stylus: greyA700     -  #5d6169, CSS: var(--greyA700)
-    Stylus: white        -  #FFFFFF, CSS: var(--white)
-    Stylus: paleGrey     -  #F5F6F7, CSS: var(--paleGrey)
-    Stylus: silver       -  #D6D8Da, CSS: var(--silver)
-    Stylus: coolGrey     -  #95999D, CSS: var(--coolGrey)
-    Stylus: slateGrey    -  #5D6165, CSS: var(--slateGrey)
-    Stylus: charcoalGrey -  #32363F, CSS: var(--charcoalGrey)
-    Stylus: black        -  #000000, CSS: var(--black)
-
-    Styleguide Settings.colors.grey
-    */
-  --grey0: #fff;
-  --grey50: #f9fafb;
-  --grey100: #f4f5f6;
-  --grey200: #eceff1;
-  --grey300: #dde0e3;
-  --grey400: #bfc3c7;
-  --grey500: #9da2a6;
-  --grey600: #7c8086;
-  --grey700: #5d6169;
-  --grey800: #3e424a;
-  --grey900: #1d212a;
-  --greyA100: #d3d6d8;
-  --greyA200: #a7abaf;
-  --greyA400: #2c3039;
-  --greyA700: #5d6169;
-  --white: #fff;
-  --paleGrey: #f5f6f7;
-  --silver: #d6d8da;
-  --coolGrey: #95999d;
-  --slateGrey: #5d6165;
-  --charcoalGrey: #32363f;
-  --black: #000;
-  --overlay: rgba(50,54,63,0.5);
-/*
-    Blue
-
-    Stylus: zircon       -  #F5FAFF, CSS: var(--zircon)
-    Stylus: dodgerBlue   -  #297EF2, CSS: var(--dodgerBlue)
-    Stylus: scienceBlue  -  #0B61D6, CSS: var(--scienceBlue)
-
-    Styleguide Settings.colors.blue
-    */
-  --zircon: #f5faff;
-  --dodgerBlue: #297ef2;
-  --scienceBlue: #0b61d6;
-/*
-    Green
-
-    Stylus: weirdGreen   - #40DE8E, CSS: var(--weirdGreen)
-    Stylus: emerald      - #35CE68, CSS: var(--emerald)
-    Stylus: malachite    - #08b442, CSS: var(--malachite)
-
-    Styleguide Settings.colors.green
-    */
-  --weirdGreen: #40de8e;
-  --emerald: #35ce68;
-  --malachite: #08b442;
-/*
-    Orange
-
-    Stylus: mango         - #FF962F, CSS: var(--mango)
-
-    Styleguide Settings.colors.orange
-    */
-  --mango: #ff962f;
-/*
-    Red
-
-    Stylus: chablis      - #FFF2F2, CSS: var(--chablis)
-    Stylus: yourPink     - #FDCBCB, CSS: var(--yourPink)
-    Stylus: fuchsia      - #FC4C83, CSS: var(--fuchsia)
-    Stylus: pomegranate  - #F52D2D, CSS: var(--pomegranate)
-    Stylus: monza        - #DD0505, CSS: var(--monza)
-
-    Styleguide Settings.colors.red
-    */
-  --chablis: #fff2f2;
-  --yourPink: #fdcbcb;
-  --fuchsia: #fc4c83;
-  --pomegranate: #f52d2d;
-  --monza: #dd0505;
-}
-html,
-.CozyTheme--normal--i2yJP {
-/*
-    Primary colors
-
-    Stylus: primaryColorLightest     - #B3D3FF, CSS: var(--primaryColorLightest)
-    Stylus: primaryColorLight        - #5C9DF5, CSS: var(--primaryColorLight)
-    Stylus: primaryColor             - #297EF2, CSS: var(--primaryColor)
-    Stylus: primaryColorDark         - #0B61D6, CSS: var(--primaryColorDark)
-    Stylus: primaryContrastTextColor - #FFF, CSS: var(--primaryContrastTextColor)
-
-    Styleguide Settings.theme.primary
-    */
-  --primaryColorLightest: #b3d3ff;
-  --primaryColorLight: #579eff;
-  --primaryColor: #297ef2;
-  --primaryColorDark: #0f5cc7;
-  --primaryContrastTextColor: #fff;
-/*
-    Secondary colors
-
-    Stylus: secondaryColorLightest     - #FFD3D3, CSS: var(--secondaryColorLightest)
-    Stylus: secondaryColorLight        - #F96B6B, CSS: var(--secondaryColorLight)
-    Stylus: secondaryColor             - #EA3F3F, CSS: var(--secondaryColor)
-    Stylus: secondaryColorDark         - #D31F1F, CSS: var(--secondaryColorDark)
-    Stylus: secondaryContrastTextColor -  #FFF, CSS: var(--secondaryContrastTextColor)
-
-    Styleguide Settings.theme.secondary
-    */
-  --secondaryColorLightest: #ffd3d3;
-  --secondaryColorLight: #f96b6b;
-  --secondaryColor: #ea3f3f;
-  --secondaryColorDark: #d31f1f;
-  --secondaryContrastTextColor: #fff;
-/*
-    Background colors
-
-    Stylus: primaryBackgroundLight -  #F7FAFF, CSS: var(--primaryBackgroundLight)
-    Stylus: paperBackgroundColor -  #FFF, CSS: var(--paperBackgroundColor)
-    Stylus: defaultBackgroundColor -  #F4F5F6, CSS: var(--defaultBackgroundColor)
-
-    Styleguide Settings.theme.background
-    */
-  --primaryBackgroundLight: #f7faff;
-  --paperBackgroundColor: #fff;
-  --defaultBackgroundColor: #f4f5f6;
-/*
-    Text colors
-
-    These colors use the alpha layer. Be careful to use the semantic variable.
-    Hexadecimal colors are here only as an example on a white background.
-
-    Stylus: primaryTextColor -  #383B43, CSS: var(--primaryTextColor)
-    Stylus: secondaryTextColor - #9D9EA1, CSS: var(--secondaryTextColor)
-    Stylus: disabledTextColor - #BEBFC1, CSS: var(--disabledTextColor)
-    Stylus: hintTextColor - #BEBFC1, CSS: var(--hintTextColor)
-    Stylus: iconTextColor - #66686D, CSS: var(--iconTextColor)
-
-    Styleguide Settings.theme.text
-    */
-  --primaryTextColor: rgba(29,33,42,0.9);
-  --secondaryTextColor: rgba(29,33,42,0.48);
-  --disabledTextColor: rgba(29,33,42,0.32);
-  --hintTextColor: rgba(29,33,42,0.32);
-  --iconTextColor: rgba(29,33,42,0.72);
-/*
-    Action colors
-
-    These colors use the alpha layer. Be careful to use the semantic variable.
-    Hexadecimal colors are here only as an example on a white background.
-
-    Stylus: actionColorActive   - #8A8C90, CSS: var(--actionColorActive)
-    Stylus: actionColorHover   - #F7F7F7, CSS: var(--actionColorHover)
-    Stylus: actionColorSelected   - #EFEFF0, CSS: var(--actionColorSelected)
-    Stylus: actionColorDisabled   - #CFCFD1, CSS: var(--actionColorDisabled)
-    Stylus: actionColorDisabledBackground   - #E7E7E8, CSS: var(--actionColorDisabledBackground)
-    Stylus: actionColorFocus   - #E7E7E8, CSS: var(--actionColorFocus)
-    Stylus: actionColorGhost   - #EFEFF0, CSS: var(--actionColorGhost)
-    Stylus: actionColorHoverGhost   - #DFE0E0, CSS: var(--actionColorHoverGhost)
-
-    Styleguide Settings.theme.action
-    */
-  --actionColorActive: rgba(29,33,42,0.56);
-  --actionColorHover: rgba(29,33,42,0.04);
-  --actionColorSelected: rgba(29,33,42,0.08);
-  --actionColorDisabled: rgba(29,33,42,0.24);
-  --actionColorDisabledBackground: rgba(29,33,42,0.12);
-  --actionColorFocus: rgba(29,33,42,0.12);
-  --actionColorGhost: rgba(29,33,42,0.08);
-  --actionColorHoverGhost: rgba(29,33,42,0.16);
-/*
-    Border colors
-
-    These colors use the alpha layer. Be careful to use the semantic variable.
-    Hexadecimal colors are here only as an example on a white background.
-
-    Stylus: borderMainColor - #DFE0E0, CSS: var(--borderMainColor)
-    Stylus: borderDisabledColor - #EFEFF0, CSS: var(--borderDisabledColor)
-    Stylus: borderGhostColor - #9D9EA1, CSS: var(--borderGhostColor)
-    Stylus: borderGhostDisabledColor - #DFE0E0, CSS: var(--borderGhostDisabledColor)
-
-    Styleguide Settings.theme.border
-    */
-  --borderMainColor: rgba(29,33,42,0.16);
-  --borderDisabledColor: rgba(29,33,42,0.08);
-  --borderGhostColor: rgba(29,33,42,0.48);
-  --borderGhostDisabledColor: rgba(29,33,42,0.16);
-/*
-    Divider colors
-
-    These colors use the alpha layer. Be careful to use the semantic variable.
-    Hexadecimal colors are here only as an example on a white background.
-
-    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
-
-    Styleguide Settings.theme.divider
-    */
-  --dividerColor: rgba(29,33,42,0.12);
-/*
-    Success colors
-
-    Stylus: successColorLight        -  #38C949, CSS: var(--successColorLight)
-    Stylus: successColor             -  #09AE1C, CSS: var(--successColor)
-    Stylus: successColorDark         -  #018711, CSS: var(--successColorDark)
-    Stylus: successColorContrastText -  #FFF, CSS: var(--successColorContrastText)
-
-    Styleguide Settings.theme.success
-    */
-  --successColorLight: #38c949;
-  --successColor: #09ae1c;
-  --successColorDark: #018711;
-  --successColorContrastText: #fff;
-/*
-    Warning colors
-
-    Stylus: warningColorLight        -  #EFA82F, CSS: var(--warningColorLight)
-    Stylus: warningColor             -  #CB8100, CSS: var(--warningColor)
-    Stylus: warningColorDark         -  #986100, CSS: var(--warningColorDark)
-    Stylus: warningColorContrastText -  #FFF, CSS: var(--warningColorContrastText)
-
-    Styleguide Settings.theme.warning
-    */
-  --warningColorLight: #efa82d;
-  --warningColor: #cb8100;
-  --warningColorDark: #986100;
-  --warningColorContrastText: #fff;
-/*
-    Error colors
-
-    Stylus: errorColorLightest     -  #FFECEC, CSS: var(--errorColorLightest)
-    Stylus: errorColorLight        -  #F96B6B, CSS: var(--errorColorLight)
-    Stylus: errorColor             -  #EA3F3F, CSS: var(--errorColor)
-    Stylus: errorColorDark         -  #D31F1F, CSS: var(--errorColorDark)
-    Stylus: errorBackground        -  #FFECEC, CSS: var(--errorBackground)
-    Stylus: errorColorContrastText -  #FFF, CSS: var(--errorColorContrastText)
-
-    Styleguide Settings.theme.error
-    */
-  --errorColorLightest: #ffecec;
-  --errorColorLight: #f96b6b;
-  --errorColor: #ea3f3f;
-  --errorColorDark: #d31f1f;
-  --errorBackground: #ffecec;
-  --errorColorContrastText: #fff;
-/*
-    Info colors
-
-    Stylus: infoColorLight        -  #0EC4C7, CSS: var(--infoColorLight)
-    Stylus: infoColor             -  #009FA2, CSS: var(--infoColor)
-    Stylus: infoColorDark         -  #007578, CSS: var(--infoColorDark)
-    Stylus: infoColorContrastText -  #FFF, CSS: var(--infoColorContrastText)
-
-    Styleguide Settings.theme.info
-    */
-  --infoColorLight: #0ec4c7;
-  --infoColor: #009fa2;
-  --infoColorDark: #007578;
-  --infoColorContrastText: #fff;
-/*
-    ---------------------------------------------------------------------
-    */
-/*
-    The CSS variables below are historic and we should strive not to
-    use them. Prefer to use directly semantic colors above.
-    */
-  --spinnerColor: var(--primaryColor);
-  --linkColor: var(--primaryColor);
-  --linkTextDecoration: none;
-  --linkColorActive: var(--primaryColorDark);
-  --invertedTabsActiveTextColor: var(--primaryContrastTextColor);
-  --invertedTabsInactiveTextColor: var(--primaryContrastTextColor);
-  --invertedTabsIndicatorColor: var(--primaryContrastTextColor);
-  --invertedTabsBackgroundColor: var(--primaryColor);
-  --regularButtonPrimaryColor: var(--primaryColor);
-  --regularButtonSecondaryColor: var(--primaryColor);
-  --regularButtonActiveColor: var(--primaryColorDark);
-  --regularButtonConstrastColor: var(--primaryContrastTextColor);
-  --secondaryButtonPrimaryColor: #fff;
-  --secondaryButtonSecondaryColor: var(--silver);
-  --secondaryButtonActiveColor: var(--silver);
-  --secondaryButtonContrastColor: var(--black);
-  --dividerColor2: var(--coolGrey);
-  --iconColor: currentColor;
-  --textIconColor: var(--charcoalGrey);
-  --actionMenuIconColor: var(--slateGrey);
-  --neutralBackground: var(--paleGrey);
-  --buttonTextTransform: uppercase;
-  --buttonBorderRadius: 0.125rem;
-  --navTextColor: var(--slateGrey);
-  --navTextActiveColor: var(--slateGrey);
-  --navTextHoverColor: var(--charcoalGrey);
-  --alertErrorColor: #fff;
-  --alertErrorBackgroundColor: var(--errorColor);
-  --alertSuccessColor: #fff;
-  --alertSuccessBackgroundColor: var(--successColor);
-  --alertInfoColor: #fff;
-  --alertInfoBackgroundColor: var(--slateGrey);
-}
-/*
-root overrides are only for depracted variables.
-*/
 :root {
-  --invertedBackgroundColor: var(--primaryColor);
-  --invertedContrastTextColor: var(--primaryContrastTextColor);
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
 }
-.CozyTheme--inverted--1ygHa {
+.CozyTheme--inverted--UL0fq {
   --primaryTextColor: #fff;
   --secondaryTextColor: rgba(255,255,255,0.64);
   --disabledTextColor: rgba(255,255,255,0.4);
@@ -6634,8 +6384,8 @@ root overrides are only for depracted variables.
   --borderDisabledColor: rgba(255,255,255,0.12);
   --borderGhostColor: rgba(255,255,255,0.48);
   --borderGhostDisabledColor: rgba(255,255,255,0.24);
-  --paperBackgroundColor: #579eff;
-  --defaultBackgroundColor: #297ef2;
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
   --primaryColorLight: #fff;
   --primaryColor: #fff;
   --primaryColorDark: #eaf3ff;
@@ -6643,47 +6393,46 @@ root overrides are only for depracted variables.
   --secondaryColorLight: #f8eefd;
   --secondaryColor: #ecd7f7;
   --secondaryColorDark: #deb8f0;
-  --secondaryContrastTextColor: #fff;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
   --errorColorLight: #ffecec;
   --errorColor: #ffd3d3;
   --errorColorDark: #ffb9b9;
-  --errorColorContrastText: #fff;
+  --errorColorContrastText: rgba(29,33,42,0.9);
   --errorBackground: #d31f1f;
   --warningColorLight: #fff3dd;
   --warningColor: #ffe4b5;
   --warningColorDark: #ffd58b;
-  --warningColorContrastText: #fff;
+  --warningColorContrastText: rgba(29,33,42,0.9);
   --successColorLight: #e3ffe7;
   --successColor: #c0f4c6;
   --successColorDark: #97eca1;
-  --successColorContrastText: #fff;
+  --successColorContrastText: rgba(29,33,42,0.9);
   --infoColorLight: #d4feff;
   --infoColor: #affdff;
   --infoColorDark: #86f5f7;
-  --infoColorContrastText: #fff;
+  --infoColorContrastText: rgba(29,33,42,0.9);
 /*
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
   --iconColor: var(--secondaryTextColor);
-  --textIconColor: var(--invertedContrastTextColor);
-  --barIconColor: var(--invertedContrastTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
-  --spinnerColor: var(--invertedContrastTextColor);
-  --linkColor: var(--invertedContrastTextColor);
-  --linkColorActive: var(--invertedContrastTextColor);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
   --linkTextDecoration: underline;
-  --regularButtonPrimaryColor: var(--invertedContrastTextColor);
-  --regularButtonSecondaryColor: var(--invertedContrastTextColor);
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
   --regularButtonActiveColor: rgba(255,255,255,0.88);
-  --regularButtonConstrastColor: var(--invertedBackgroundColor);
-  --secondaryButtonPrimaryColor: var(--invertedBackgroundColor);
-  --secondaryButtonSecondaryColor: var(--invertedContrastTextColor);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
   --secondaryButtonActiveColor: rgba(255,255,255,0.24);
-  --secondaryButtonContrastColor: var(--invertedContrastTextColor);
+  --secondaryButtonContrastColor: #fff;
   --dividerColor2: rgba(255,255,255,0.16);
 }
-
 /*------------------------------------*  Palette
   =====
 \*------------------------------------*/
@@ -8179,6 +7928,29 @@ html,
   color: var(--coolGrey);
 }
 
+.divider---oC9I {
+  align-items: center;
+  display: flex;
+}
+.divider---oC9I::after,
+.divider---oC9I::before {
+  content: '';
+  height: 1px;
+  background-color: var(--dividerColor);
+}
+.divider---oC9I::before {
+  display: none;
+  margin-right: 0.5rem;
+}
+.divider---oC9I::after {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+.center--2jZEg::before {
+  display: block;
+  flex: 1;
+}
+
 .BarButton--3z5Er {
   display: flex;
   align-items: center;
@@ -9030,6 +8802,78 @@ body {
   margin: 0;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--e9x-M {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -12764,6 +12608,78 @@ body {
   margin-top: 3rem;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--1ISSo {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -13176,6 +13092,78 @@ html,
   color: var(--coolGrey);
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--2PHI1 {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -13526,14 +13514,26 @@ html,
 
 .DialogCloseButton--cxKPO {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 1.15rem;
+  right: 1.15rem;
   z-index: var(--zIndex-modal);
 }
 @media (max-width: 48rem) {
   .DialogCloseButton--cxKPO {
     top: 0.25rem;
     right: 0.25rem;
+  }
+}
+.DialogBackButton--1c7yH {
+  position: absolute;
+  top: 1.15rem;
+  left: 1.15rem;
+  z-index: var(--zIndex-modal);
+}
+@media (max-width: 48rem) {
+  .DialogBackButton--1c7yH {
+    top: 0.25rem;
+    left: 0.25rem;
   }
 }
 
@@ -13565,6 +13565,78 @@ html,
   height: 5px;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--1VV-g {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -16657,6 +16729,78 @@ html,
 @media (max-width: 48rem) {
 }
 @media (max-width: 48rem) {
+}
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--1qeqU {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
 }
 html {
 /*
@@ -20951,6 +21095,78 @@ body {
   }
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--_lEpp {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -21477,6 +21693,78 @@ html {
   flex-direction: column;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--29EFn {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -22634,770 +22922,6 @@ html {
   transition: opacity 0.3s, visibility 0s ease-out;
 }
 
-html {
-  --zIndex-below: -1;
-  --zIndex-app: 0;
-  --zIndex-low: 1;
-  --zIndex-alertMobile: 10;
-  --zIndex-nav: 20;
-  --zIndex-bar: 21;
-  --zIndex-selection: 30;
-  --zIndex-popover: 40;
-  --zIndex-overlay: 50;
-  --zIndex-fileActionMenu: 60;
-  --zIndex-drawer: 60;
-  --zIndex-modal: 70;
-  --zindex-alert: 80;
-}
-html {
-  --primaryFont: Lato, sans-serif;
-}
-body,
-body button,
-body input,
-body optgroup,
-body select,
-body textarea {
-  font-family: var(--primaryFont);
-}
-html {
-  font-size: 100%;
-}
-body {
-  font: 100%/1.5;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-html {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100vw;
-  height: 100%;
-  margin: 0;
-}
-@media (max-width: 63.938rem) {
-  html,
-  body {
-    display: block;
-    height: auto;
-  }
-}
-[role=application] {
-  display: flex;
-  height: inherit;
-  flex: 1 1 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-@media (max-width: 63.938rem) {
-  [role=application] {
-    overflow: visible;
-  }
-}
-html,
-body {
-  background-color: var(--white);
-  color: var(--black);
-}
-@-moz-keyframes spin--2gA95 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@-webkit-keyframes spin--2gA95 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin--2gA95 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes spin--2gA95 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@-moz-keyframes shake--2YJ5i {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-@-webkit-keyframes shake--2YJ5i {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-@-o-keyframes shake--2YJ5i {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-@keyframes shake--2YJ5i {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
-.u-visuallyhidden {
-  position: absolute !important;
-  border: 0 !important;
-  width: 0.063rem !important;
-  height: 0.063rem !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-  clip: rect(0.063rem, 0.063rem, 0.063rem, 0.063rem) !important;
-  clip-path: inset(50%) !important;
-}
-.u-hide {
-  display: none !important;
-  visibility: hidden !important;
-}
-@media (max-width: 63.938rem) {
-  .u-hide--mob {
-    display: none !important;
-  }
-}
-@media (min-width: 64rem) {
-  .u-hide--tablet {
-    display: none !important;
-  }
-}
-@media (min-width: 48.063rem) {
-  .u-hide--desk {
-    display: none !important;
-  }
-}
-.u-dn {
-  display: none;
-}
-.u-di {
-  display: inline;
-}
-.u-db {
-  display: block;
-}
-.u-dib {
-  display: inline-block;
-}
-.u-dit {
-  display: inline-table;
-}
-.u-dt {
-  display: table;
-}
-.u-dtc {
-  display: table-cell;
-}
-.u-dt-row {
-  display: table-row;
-}
-.u-dt-row-group {
-  display: table-row-group;
-}
-.u-dt-column {
-  display: table-column;
-}
-.u-dt-column-group {
-  display: table-column-group;
-}
-@media (max-width: 30rem) {
-  .u-dn-t {
-    display: none;
-  }
-  .u-di-t {
-    display: inline;
-  }
-  .u-db-t {
-    display: block;
-  }
-  .u-dib-t {
-    display: inline-block;
-  }
-  .u-dit-t {
-    display: inline-table;
-  }
-  .u-dt-t {
-    display: table;
-  }
-  .u-dtc-t {
-    display: table-cell;
-  }
-  .u-dt-row-t {
-    display: table-row;
-  }
-  .u-dt-row-group-t {
-    display: table-row-group;
-  }
-  .u-dt-column-t {
-    display: table-column;
-  }
-  .u-dt-column-group-t {
-    display: table-column-group;
-  }
-}
-@media (max-width: 48rem) {
-  .u-dn-s {
-    display: none;
-  }
-  .u-di-s {
-    display: inline;
-  }
-  .u-db-s {
-    display: block;
-  }
-  .u-dib-s {
-    display: inline-block;
-  }
-  .u-dit-s {
-    display: inline-table;
-  }
-  .u-dt-s {
-    display: table;
-  }
-  .u-dtc-s {
-    display: table-cell;
-  }
-  .u-dt-row-s {
-    display: table-row;
-  }
-  .u-dt-row-group-s {
-    display: table-row-group;
-  }
-  .u-dt-column-s {
-    display: table-column;
-  }
-  .u-dt-column-group-s {
-    display: table-column-group;
-  }
-}
-@media (max-width: 63.938rem) {
-  .u-dn-m {
-    display: none;
-  }
-  .u-di-m {
-    display: inline;
-  }
-  .u-db-m {
-    display: block;
-  }
-  .u-dib-m {
-    display: inline-block;
-  }
-  .u-dit-m {
-    display: inline-table;
-  }
-  .u-dt-m {
-    display: table;
-  }
-  .u-dtc-m {
-    display: table-cell;
-  }
-  .u-dt-row-m {
-    display: table-row;
-  }
-  .u-dt-row-group-m {
-    display: table-row-group;
-  }
-  .u-dt-column-m {
-    display: table-column;
-  }
-  .u-dt-column-group-m {
-    display: table-column-group;
-  }
-}
-.u-black {
-  color: var(--black) !important;
-}
-.u-charcoalGrey {
-  color: var(--charcoalGrey) !important;
-}
-.u-coolGrey {
-  color: var(--coolGrey) !important;
-}
-.u-silver {
-  color: var(--silver) !important;
-}
-.u-slateGrey {
-  color: var(--slateGrey) !important;
-}
-.u-lightishPurple {
-  color: #b449e7 !important;
-}
-.u-dodgerBlue {
-  color: #297ef2 !important;
-}
-.u-overlay {
-  color: var(--overlay) !important;
-}
-.u-paleGrey {
-  color: var(--paleGrey) !important;
-}
-.u-monza {
-  color: #dd0505 !important;
-}
-.u-pomegranate {
-  color: #f52d2d !important;
-}
-.u-primaryBackgroundLight {
-  color: var(--primaryBackgroundLight) !important;
-}
-.u-primaryColor {
-  color: var(--primaryColor) !important;
-}
-.u-primaryColorLight {
-  color: var(--primaryColorLight) !important;
-}
-.u-primaryContrastTextColor {
-  color: var(--primaryContrastTextColor) !important;
-}
-.u-error {
-  color: var(--errorColor) !important;
-}
-.u-errorBackground {
-  color: var(--errorBackground) !important;
-}
-.u-success {
-  color: var(--successColor) !important;
-}
-.u-warning {
-  color: var(--warningColor) !important;
-}
-.u-info {
-  color: var(--infoColor) !important;
-}
-.u-weirdGreen {
-  color: #40de8e !important;
-}
-.u-white {
-  color: var(--white) !important;
-}
-.u-breakword {
-  word-break: break-word;
-}
-.u-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.u-spacellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: break-spaces;
-}
-@media (max-width: 30rem) {
-  .u-spacellipsis-t {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: break-spaces;
-  }
-}
-@media (max-width: 48rem) {
-  .u-spacellipsis-s {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: break-spaces;
-  }
-}
-@media (max-width: 63.938rem) {
-  .u-spacellipsis-m {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: break-spaces;
-  }
-}
-.u-midellipsis {
-  display: flex;
-  flex-wrap: nowrap;
-}
-.u-midellipsis > * {
-  display: inline-block;
-  max-width: 50%;
-  overflow: hidden;
-  white-space: pre;
-}
-.u-midellipsis > :first-child {
-  text-overflow: ellipsis;
-}
-.u-midellipsis > :last-child {
-  text-overflow: clip;
-  direction: rtl;
-}
-@supports (text-overflow: '[...]') {
-  .u-midellipsis > :first-child {
-    text-overflow: '[...]';
-  }
-}
-.u-link:link {
-  color: var(--linkColor) !important;
-  text-decoration: var(--linkTextDecoration) !important;
-}
-.u-link:visited,
-.u-link:active,
-.u-link:hover,
-.u-link:focus {
-  color: var(--linkColorActive) !important;
-}
-.u-lh-tiny {
-  line-height: 1 !important;
-}
-.u-lh-xsmall {
-  line-height: 1.1 !important;
-}
-.u-lh-small {
-  line-height: 1.2 !important;
-}
-.u-lh-medium {
-  line-height: 1.3 !important;
-}
-.u-lh-large {
-  line-height: 1.4 !important;
-}
-.u-lh-xlarge {
-  line-height: 1.5 !important;
-}
-.u-fz-tiny {
-  font-size: 0.75rem !important;
-  line-height: 1.3 !important;
-}
-.u-fz-xsmall {
-  font-size: 0.813rem !important;
-  line-height: 1.4 !important;
-}
-.u-fz-small {
-  font-size: 0.875rem !important;
-  line-height: 1.4 !important;
-}
-.u-fz-medium {
-  font-size: 1rem !important;
-  line-height: 1.5 !important;
-}
-.u-fz-large {
-  font-size: 1.125rem !important;
-  line-height: 1.5 !important;
-}
-@media (max-width: 30rem) {
-  .u-fz-tiny-t {
-    font-size: 0.75rem !important;
-    line-height: 1.3 !important;
-  }
-  .u-fz-xsmall-t {
-    font-size: 0.813rem !important;
-    line-height: 1.4 !important;
-  }
-  .u-fz-small-t {
-    font-size: 0.875rem !important;
-    line-height: 1.4 !important;
-  }
-  .u-fz-medium-t {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-  }
-  .u-fz-large-t {
-    font-size: 1.125rem !important;
-    line-height: 1.5 !important;
-  }
-}
-@media (max-width: 48rem) {
-  .u-fz-tiny-s {
-    font-size: 0.75rem !important;
-    line-height: 1.3 !important;
-  }
-  .u-fz-xsmall-s {
-    font-size: 0.813rem !important;
-    line-height: 1.4 !important;
-  }
-  .u-fz-small-s {
-    font-size: 0.875rem !important;
-    line-height: 1.4 !important;
-  }
-  .u-fz-medium-s {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-  }
-  .u-fz-large-s {
-    font-size: 1.125rem !important;
-    line-height: 1.5 !important;
-  }
-}
-@media (max-width: 63.938rem) {
-  .u-fz-tiny-m {
-    font-size: 0.75rem !important;
-    line-height: 1.3 !important;
-  }
-  .u-fz-xsmall-m {
-    font-size: 0.813rem !important;
-    line-height: 1.4 !important;
-  }
-  .u-fz-small-m {
-    font-size: 0.875rem !important;
-    line-height: 1.4 !important;
-  }
-  .u-fz-medium-m {
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-  }
-  .u-fz-large-m {
-    font-size: 1.125rem !important;
-    line-height: 1.5 !important;
-  }
-}
-.u-ta-left {
-  text-align: left !important;
-}
-.u-ta-right {
-  text-align: right !important;
-}
-.u-ta-center {
-  text-align: center !important;
-}
-.u-ta-justify {
-  text-align: justify !important;
-}
-@media (max-width: 30rem) {
-  .u-ta-left-t {
-    text-align: left !important;
-  }
-  .u-ta-right-t {
-    text-align: right !important;
-  }
-  .u-ta-center-t {
-    text-align: center !important;
-  }
-  .u-ta-justify-t {
-    text-align: justify !important;
-  }
-}
-@media (max-width: 48rem) {
-  .u-ta-left-s {
-    text-align: left !important;
-  }
-  .u-ta-right-s {
-    text-align: right !important;
-  }
-  .u-ta-center-s {
-    text-align: center !important;
-  }
-  .u-ta-justify-s {
-    text-align: justify !important;
-  }
-}
-@media (max-width: 63.938rem) {
-  .u-ta-left-m {
-    text-align: left !important;
-  }
-  .u-ta-right-m {
-    text-align: right !important;
-  }
-  .u-ta-center-m {
-    text-align: center !important;
-  }
-  .u-ta-justify-m {
-    text-align: justify !important;
-  }
-}
-.u-fs-normal {
-  font-style: normal !important;
-}
-.u-fs-italic {
-  font-style: italic !important;
-}
-@media (max-width: 30rem) {
-  .u-fs-normal-t {
-    font-style: normal !important;
-  }
-  .u-fs-italic-t {
-    font-style: italic !important;
-  }
-}
-@media (max-width: 48rem) {
-  .u-fs-normal-s {
-    font-style: normal !important;
-  }
-  .u-fs-italic-s {
-    font-style: italic !important;
-  }
-}
-@media (max-width: 63.938rem) {
-  .u-fs-normal-m {
-    font-style: normal !important;
-  }
-  .u-fs-italic-m {
-    font-style: italic !important;
-  }
-}
-.u-fw-normal {
-  font-weight: normal;
-}
-.u-fw-bold {
-  font-weight: bold;
-}
-@media (max-width: 30rem) {
-  .u-fw-normal-t {
-    font-weight: normal;
-  }
-  .u-fw-bold-t {
-    font-weight: bold;
-  }
-}
-@media (max-width: 48rem) {
-  .u-fw-normal-s {
-    font-weight: normal;
-  }
-  .u-fw-bold-s {
-    font-weight: bold;
-  }
-}
-@media (max-width: 63.938rem) {
-  .u-fw-normal-m {
-    font-weight: normal;
-  }
-  .u-fw-bold-m {
-    font-weight: bold;
-  }
-}
-@media (pointer: coarse) {
-}
-[data-input=radio],
-[data-input=checkbox] {
-  display: flex;
-}
-[data-input=radio] input[type=radio],
-[data-input=checkbox] input[type=radio],
-[data-input=radio] input[type=checkbox],
-[data-input=checkbox] input[type=checkbox] {
-  display: none !important;
-  visibility: hidden !important;
-}
-[data-input=radio] label,
-[data-input=checkbox] label {
-  position: relative;
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  padding-left: 1.4rem;
-  cursor: pointer;
-}
-[data-input=radio] label::before,
-[data-input=checkbox] label::before,
-[data-input=radio] label::after,
-[data-input=checkbox] label::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  box-sizing: border-box;
-  width: 1rem;
-  height: 1rem;
-}
-[data-input=radio] label::before,
-[data-input=checkbox] label::before {
-  transition: box-shadow 350ms cubic-bezier(0, 0.89, 0.44, 1);
-}
-[data-input=radio] label::after,
-[data-input=checkbox] label::after {
-  transition-duration: 0.2s;
-  transition-property: opacity, transform;
-}
-@media (max-width: 48rem) {
-}
-@media (max-width: 48rem) {
-}
-[data-input=radio] label::before {
-  border-radius: 50%;
-  border: 0.125rem solid var(--coolGrey);
-  box-shadow: inset 0 0 0 1rem transparent;
-}
-[data-input=radio] input[type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 0.188rem var(--paleGrey), inset 0 0 0 1rem var(--dodgerBlue);
-}
-[data-input=checkbox] label::before,
-[data-input=checkbox] label::after {
-  border-radius: 0.125rem;
-}
-[data-input=checkbox] label::before {
-  background-color: var(--white);
-  box-shadow: inset 0 0 0 0.125rem var(--silver);
-}
-[data-input=checkbox] label::before:hover {
-  box-shadow: inset 0 0 0 0.125rem var(--dodgerBlue);
-}
-[data-input=checkbox] label::after {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjAnIHZpZXdCb3g9JzAgMCAyMCAyMCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz4KICAgIDxwYXRoIGQ9J00zIDEwLjAxOWw0LjUyMyA0LjUyMyA5LjU0MS05LjU0MScgc3Ryb2tlPScjRkZGJyBzdHJva2Utd2lkdGg9JzInIGZpbGw9Im5vbmUiLz4KPC9zdmc+Cg==");
-  background-size: contain;
-}
-[data-input=checkbox][aria-checked='mixed'] label::after {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj48cGF0aCBkPSJNMy40OTcgMTBoMTMuMDA2IiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMiIgLz48L3N2Zz4K");
-  background-size: contain;
-}
-[data-input=checkbox] input[type=checkbox]:checked + label::before {
-  box-shadow: inset 0 0 0 1rem var(--dodgerBlue);
-}
-[data-input=checkbox] input[type=checkbox]:checked + label::after {
-  opacity: 1;
-  transform: scale(1);
-}
-[data-input=checkbox] input[type=checkbox]:not(:checked) + label::after {
-  opacity: 0;
-  transform: scale(0);
-}
-@media (max-width: 63.938rem) {
-}
-@media (max-width: 63.938rem) {
-}
 .c-empty--3w5oV {
   display: flex;
   flex-direction: column;
@@ -23407,12 +22931,6 @@ body {
   padding: 1rem 0;
   text-align: center;
   max-width: 100%;
-}
-@media (max-width: 63.938rem) {
-  .c-empty--3w5oV {
-    margin-top: calc(50vh - 6rem);
-    transform: translateY(-50%);
-  }
 }
 .c-empty-img--2GC4d {
   display: block;
@@ -23454,23 +22972,13 @@ body {
 .c-empty-text--3HnvR {
   margin: 0.313rem auto 0;
   max-width: 63rem;
-  color: var(--coolGrey);
+  color: var(--secondaryTextColor);
   line-height: 1.5;
 }
 @media (max-width: 63.938rem) {
   .c-empty-text--3HnvR {
     margin: 0.313rem 1.5rem 0;
   }
-}
-.c-empty-container--1LpH9 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 0 auto;
-  align-self: center;
-  padding: 1rem 0;
-  text-align: center;
-  max-width: 100%;
 }
 
 .Figure-currency--195-B {
@@ -23555,6 +23063,78 @@ body {
   white-space: nowrap;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--1T27N {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -23903,6 +23483,78 @@ html,
   padding: 0.75rem;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--2v05w {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -24247,6 +23899,78 @@ html,
   margin: 0 0.5rem;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--3iEVq {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -27049,6 +26773,78 @@ html {
   color: #b449e7;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--wvkG5 {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -28095,6 +27891,78 @@ html,
 @media (pointer: coarse) {
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--1II8o {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -28801,6 +28669,18 @@ html {
 }
 .viewer-pdfMobile--image--2xo_a {
   width: 100%;
+}
+
+.CompositeRow--3KCwt {
+  min-height: 3rem;
+  padding: 1rem;
+}
+.CompositeRow__dense--3EPKf {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.CompositeRow__body--3nEEv > * + * {
+  margin-top: 2px;
 }
 
 .gridItem-container--387sO {
@@ -31057,6 +30937,78 @@ html {
   z-index: 1;
 }
 
+:root {
+  --invertedBackgroundColor: #297ef2;
+  --invertedContrastTextColor: #fff;
+}
+.CozyTheme--inverted--Y2IXl {
+  --primaryTextColor: #fff;
+  --secondaryTextColor: rgba(255,255,255,0.64);
+  --disabledTextColor: rgba(255,255,255,0.4);
+  --hintTextColor: rgba(255,255,255,0.4);
+  --iconTextColor: #fff;
+  --actionColorActive: #fff;
+  --actionColorHover: rgba(255,255,255,0.08);
+  --actionColorSelected: rgba(255,255,255,0.16);
+  --actionColorDisabled: rgba(255,255,255,0.32);
+  --actionColorDisabledBackground: rgba(255,255,255,0.12);
+  --actionColorFocus: rgba(255,255,255,0.24);
+  --actionColorGhost: rgba(255,255,255,0.08);
+  --actionColorHoverGhost: rgba(255,255,255,0.16);
+  --dividerColor: rgba(255,255,255,0.16);
+  --borderMainColor: rgba(255,255,255,0.24);
+  --borderDisabledColor: rgba(255,255,255,0.12);
+  --borderGhostColor: rgba(255,255,255,0.48);
+  --borderGhostDisabledColor: rgba(255,255,255,0.24);
+  --paperBackgroundColor: #297ef2;
+  --defaultBackgroundColor: #579eff;
+  --primaryColorLight: #fff;
+  --primaryColor: #fff;
+  --primaryColorDark: #eaf3ff;
+  --primaryContrastTextColor: #297ef2;
+  --secondaryColorLight: #f8eefd;
+  --secondaryColor: #ecd7f7;
+  --secondaryColorDark: #deb8f0;
+  --secondaryContrastTextColor: rgba(29,33,42,0.9);
+  --errorColorLight: #ffecec;
+  --errorColor: #ffd3d3;
+  --errorColorDark: #ffb9b9;
+  --errorColorContrastText: rgba(29,33,42,0.9);
+  --errorBackground: #d31f1f;
+  --warningColorLight: #fff3dd;
+  --warningColor: #ffe4b5;
+  --warningColorDark: #ffd58b;
+  --warningColorContrastText: rgba(29,33,42,0.9);
+  --successColorLight: #e3ffe7;
+  --successColor: #c0f4c6;
+  --successColorDark: #97eca1;
+  --successColorContrastText: rgba(29,33,42,0.9);
+  --infoColorLight: #d4feff;
+  --infoColor: #affdff;
+  --infoColorDark: #86f5f7;
+  --infoColorContrastText: rgba(29,33,42,0.9);
+/*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+  --iconColor: var(--secondaryTextColor);
+  --textIconColor: #fff;
+  --barIconColor: #fff;
+  --barIconColorDisabled: rgba(255,255,255,0.88);
+  --spinnerColor: #fff;
+  --linkColor: #fff;
+  --linkColorActive: #fff;
+  --linkTextDecoration: underline;
+  --regularButtonPrimaryColor: #fff;
+  --regularButtonSecondaryColor: #fff;
+  --regularButtonActiveColor: rgba(255,255,255,0.88);
+  --regularButtonConstrastColor: #297ef2;
+  --secondaryButtonPrimaryColor: #297ef2;
+  --secondaryButtonSecondaryColor: #fff;
+  --secondaryButtonActiveColor: rgba(255,255,255,0.24);
+  --secondaryButtonContrastColor: #fff;
+  --dividerColor2: rgba(255,255,255,0.16);
+}
 html {
 /*
     Grey
@@ -33901,18 +33853,6 @@ html {
   .Panel-side--327EK {
     flex-basis: auto;
   }
-}
-
-.CompositeRow--3KCwt {
-  min-height: 3rem;
-  padding: 1rem;
-}
-.CompositeRow__dense--3EPKf {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.CompositeRow__body--3nEEv > * + * {
-  margin-top: 2px;
 }
 
 .intentModal--1aYIb {
