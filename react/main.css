@@ -26736,50 +26736,60 @@ html {
   opacity: 0.64;
 }
 
-.SquareAppIcon-icon-wrapper--2LcSe {
+.SquareAppIcon-wrapper--2SEuM {
   box-sizing: border-box;
   background-color: var(--defaultBackgroundColor);
   border-radius: 0.75rem;
   height: 4rem;
   width: 4rem;
-  padding: 0.625rem;
-  align-items: center;
-  justify-content: center;
 }
 @media (max-width: 48rem) {
-  .SquareAppIcon-icon-wrapper--2LcSe {
+  .SquareAppIcon-wrapper--2SEuM {
     height: 3rem;
     width: 3rem;
+  }
+}
+.SquareAppIcon-icon-container--39MRl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem;
+  border-radius: 0.75rem;
+  width: 100%;
+}
+@media (max-width: 48rem) {
+  .SquareAppIcon-icon-container--39MRl {
     padding: 0.5rem;
   }
 }
-.SquareAppIcon-variant-wrapper--2WqQG {
+.SquareAppIcon-icon-container--39MRl svg,
+.SquareAppIcon-icon-container--39MRl img {
+  width: 100%;
+}
+.SquareAppIcon-wrapper-fx--3rcF6 {
   background-color: rgba(255,255,255,0.32);
   border: 1px dashed var(--white);
 }
 @supports not (backdrop-filter: blur(48px)) {
-  .SquareAppIcon-variant-wrapper--2WqQG {
+  .SquareAppIcon-wrapper-fx--3rcF6 {
     background-color: rgba(255,255,255,0.48);
   }
 }
-.SquareAppIcon-ghost--g1-TE {
+.SquareAppIcon-wrapper-fx--3rcF6 .SquareAppIcon-icon-container--39MRl {
   backdrop-filter: blur(48px);
+}
+.SquareAppIcon-wrapper-ghost--1ZALZ .SquareAppIcon-icon-container--39MRl {
   mix-blend-mode: overlay;
 }
-.SquareAppIcon-ghost--g1-TE svg,
-.SquareAppIcon-ghost--g1-TE img {
+.SquareAppIcon-wrapper-ghost--1ZALZ .SquareAppIcon-icon-container--39MRl svg,
+.SquareAppIcon-wrapper-ghost--1ZALZ .SquareAppIcon-icon-container--39MRl img {
   filter: saturate(0%);
 }
-.SquareAppIcon-add--3zlpa {
-  backdrop-filter: blur(48px);
-  mix-blend-mode: normal;
-}
-.SquareAppIcon-maintenance--1IuVc {
-  backdrop-filter: blur(48px);
+.SquareAppIcon-wrapper-maintenance--2ne2n .SquareAppIcon-icon-container--39MRl {
   mix-blend-mode: luminosity;
 }
-.SquareAppIcon-maintenance--1IuVc svg,
-.SquareAppIcon-maintenance--1IuVc img {
+.SquareAppIcon-wrapper-maintenance--2ne2n .SquareAppIcon-icon-container--39MRl svg,
+.SquareAppIcon-wrapper-maintenance--2ne2n .SquareAppIcon-icon-container--39MRl img {
   opacity: 0.5;
 }
 
