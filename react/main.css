@@ -26736,6 +26736,53 @@ html {
   opacity: 0.64;
 }
 
+.SquareAppIcon-icon-wrapper--2LcSe {
+  box-sizing: border-box;
+  background-color: var(--defaultBackgroundColor);
+  border-radius: 0.75rem;
+  height: 4rem;
+  width: 4rem;
+  padding: 0.625rem;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 48rem) {
+  .SquareAppIcon-icon-wrapper--2LcSe {
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+  }
+}
+.SquareAppIcon-variant-wrapper--2WqQG {
+  background-color: rgba(255,255,255,0.32);
+  border: 1px dashed var(--white);
+}
+@supports not (backdrop-filter: blur(48px)) {
+  .SquareAppIcon-variant-wrapper--2WqQG {
+    background-color: rgba(255,255,255,0.48);
+  }
+}
+.SquareAppIcon-ghost--g1-TE {
+  backdrop-filter: blur(48px);
+  mix-blend-mode: overlay;
+}
+.SquareAppIcon-ghost--g1-TE svg,
+.SquareAppIcon-ghost--g1-TE img {
+  filter: saturate(0%);
+}
+.SquareAppIcon-add--3zlpa {
+  backdrop-filter: blur(48px);
+  mix-blend-mode: normal;
+}
+.SquareAppIcon-maintenance--1IuVc {
+  backdrop-filter: blur(48px);
+  mix-blend-mode: luminosity;
+}
+.SquareAppIcon-maintenance--1IuVc svg,
+.SquareAppIcon-maintenance--1IuVc img {
+  opacity: 0.5;
+}
+
 .Sections__section--2onYy {
   margin-bottom: 4rem;
 }
