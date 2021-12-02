@@ -87,23 +87,70 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-3" id="kssref-tools-mixins-hide">
+            <header class="kss-section kss-section--depth-3" id="kssref-components-form-input-radio">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-tools-mixins-hide">
+              <a class="kss-section__permalink" href="#kssref-components-form-input-radio">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">2.1.2</span>
-                  <span class="kss-section__name">visually-hide()</span>
+                  <span class="kss-section__ref">5.3.4</span>
+                  <span class="kss-section__name">Input Radio</span>
                 </h3>
               </a>
 
-                <div class="kss-section__description"><p>visually-hide() mixin visually hides an element. The element is still visible by screen readers.
-This mixin doesn't take parameters.</p>
-</div>
 
             </article>
 
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
+
+                  <h2 class="kss-modifiers__name">Default styling</h2>
+
+                <div class="kss-modifiers__example"><form>
+   <div>
+       <label class="u-mb-half c-input-radio [modifier class]">
+           <input type="radio" name="radio"/>
+           <span>I'm a radio one</span>
+       </label>
+       <label class="u-mb-half c-input-radio [modifier class]">
+           <input type="radio" name="radio"/>
+           <span>I'm a radio two</span>
+       </label>
+   </div>
+</form></div>
+
+                  <h2 class="kss-modifiers__name">.is-error</h2>
+
+                  <p class="kss-modifiers__description">Error variant</p>
+
+                  <div class="kss-modifiers__example"><form>
+   <div>
+       <label class="u-mb-half c-input-radio is-error">
+           <input type="radio" name="radio"/>
+           <span>I'm a radio one</span>
+       </label>
+       <label class="u-mb-half c-input-radio is-error">
+           <input type="radio" name="radio"/>
+           <span>I'm a radio two</span>
+       </label>
+   </div>
+</form></div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;form&gt;
+   &lt;div&gt;
+       &lt;label class&#x3D;&quot;u-mb-half c-input-radio [modifier class]&quot;&gt;
+           &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot;/&gt;
+           &lt;span&gt;I&#x27;m a radio one&lt;/span&gt;
+       &lt;/label&gt;
+       &lt;label class&#x3D;&quot;u-mb-half c-input-radio [modifier class]&quot;&gt;
+           &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;radio&quot;/&gt;
+           &lt;span&gt;I&#x27;m a radio two&lt;/span&gt;
+       &lt;/label&gt;
+   &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+                </article>
 
             </header>
     </section>
