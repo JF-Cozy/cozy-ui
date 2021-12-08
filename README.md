@@ -76,16 +76,25 @@ yarn build:css:all # Build CSS files needed by the documentation
 yarn start:doc # Run the styleguide in watch mode
 ```
 
+### Add a component
+
+If you want to add a new component, you must follow these steps:
+
+* Add the new component in `/react` folder with its `README.md` file
+* Expose it in the API by adding it in `react/index.js`
+* Add it in the documentation by modifying `docs/styleguide.config.js`
+* If necessary you can add snapshots for it by modifying `react/examples.spec.jsx` and updating them `yarn build && yarn test -u`
+
 ### Add an Icon
 
 If you want to add a new icon to cozy-ui, you must follow these steps:
 
-* First verify that the SVG doesn't have any `fill` or `fill-opacity` properties. Remove them if necessary
+* First verify that the SVG doesn't have any `fill` properties. Remove them if necessary
 * Add the SVG in the `assets/icons` folder
 * Generate the react component by running `yarn makeSvgr assets/icons/[new icon folder]/[new icon file name]`
 * Update the documentation by adding the icon in `react/Icon/Readme.md` inside `SVGr icons` and `Available UI icons` sections
 * Don't forget to check the icon's color on different theme (inverted, etc.)
-* Update the tests by running `yarn sprite && yarn build && yarn test -u`
+* Update the tests by running `yarn build && yarn test -u`
 
 ### Develop inside an app
 
@@ -181,7 +190,7 @@ rsg-screenshots --screenshot-dir screenshots/ --styleguide-dir docs/react
 screenshots/ directory
 ```
 
-See our [travis configuration](./travis.yml) for more information.
+See our [travis configuration](https://github.com/cozy/cozy-ui/blob/master/.travis.yml) for more information.
 
 ## License
 
