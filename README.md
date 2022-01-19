@@ -66,6 +66,10 @@ If you want to develop inside cozy-ui, you need a local version cozy-ui.
 git clone git@github.com:cozy/cozy-ui.git
 ```
 
+### Install
+
+First `nvm use` (to set node version as defined in .nvmrc) then `yarn install`
+
 ### Develop inside the styleguidist
 
 It is convenient when modifying a component to use the styleguide site.
@@ -85,13 +89,16 @@ If you want to add a new component, you must follow these steps:
 * Add it in the documentation by modifying `docs/styleguide.config.js`
 * If necessary you can add snapshots for it by modifying `react/examples.spec.jsx` and updating them `yarn build && yarn test -u`
 
-### Add an Icon
+### Add an icon
 
 If you want to add a new icon to cozy-ui, you must follow these steps:
 
 * First verify that the SVG doesn't have any `fill` properties. Remove them if necessary
 * Add the SVG in the `assets/icons` folder
-* Generate the react component by running `yarn makeSvgr assets/icons/[new icon folder]/[new icon file name]`
+* Optimize it with `yarn optimizeIcons`
+* Generate the react component by running
+  * `yarn makeSvgr assets/icons/[new icons folder]` or
+  * `yarn makeSvgr assets/icons/[new icon folder]/[new icon file name]`
 * Update the documentation by adding the icon in `react/Icon/Readme.md` inside `SVGr icons` and `Available UI icons` sections
 * Don't forget to check the icon's color on different theme (inverted, etc.)
 * Update the tests by running `yarn build && yarn test -u`
