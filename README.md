@@ -11,6 +11,8 @@ CSS classes and React components designed to build [Cozy](https://cozy.io/) apps
 
 If you plan to build a webapp to run on Cozy, you'll probably want to use a simple and elegant solution to build your interfaces without the mess of dealing with complex markup and CSS. Then Cozy UI is here for you!
 
+Cozy UI relies heavily on [Material UI v4](https://v4.mui.com/) and it can be useful to know how it works.
+
 ## React components (styleguidist)
 
 Check out [UI components](https://docs.cozy.io/cozy-ui/react/) to see how to use ready made React components.
@@ -88,7 +90,14 @@ If you want to add a new component, you must follow these steps:
 * Expose it in the API by adding it in `react/index.js`
 * Add it in the documentation by modifying `docs/styleguide.config.js`
 * If necessary you can add snapshots for it by modifying `react/examples.spec.jsx` and updating them `yarn build && yarn test -u`
-* Remember to propagate the possible `ref` with `React.forwardRef`. (<https://en.reactjs.org/docs/forwarding-refs.html>)
+* Remember to propagate the possible `ref` with `React.forwardRef`. [See forwardRef documentation](https://en.reactjs.org/docs/forwarding-refs.html)
+
+### Guidelines for component development
+
+* Use material UI whenever possible
+* Override material UI components inside `makeOverrides.js` when necessary
+* Avoid stylus to style new components based on MUI and prefer `/helpers/makeStyles`
+* Use semantic variables for colors from `stylus/settings/palette.styl`, or color from `theme` objects in `makeStyles`
 
 ### Add an icon
 
@@ -107,18 +116,21 @@ If you want to add a new icon to cozy-ui, you must follow these steps:
 ### Develop inside an app
 
 Sometimes, you want to develop on a component, from the context of an app.
-Then you need to link cozy-ui with `yarn link`.
+Then you need to link cozy-ui with `yarn link`. Since `cozy-ui` is transpiled, when linking you must first `yarn release`. If you change the icons, or the palette, you must run `yarn release` again.
+
 
 ```bash
 cd cozy-ui
+yarn release # if first time
 yarn link
 yarn start # Launch transpilation
+yarn release # if you change icons or palette
 ```
 
 Then in your application folder, you can link to your local Cozy UI.
-You can use [rlink](https://gist.github.com/ptbrowne/add609bdcf4396d32072acc4674fff23)
-instead of `yarn link`. It will prevent common build problems due
-to module resolution inside symlinked folders.
+You can use [rlink](https://gist.github.com/ptbrowne/add609bdcf4396d32072acc4674fff23) instead of `yarn link`. It will prevent common build problems due to module resolution inside symlinked folders.
+If your application doesn't use cozy-ui directly as dependency but through a library, you have to use `rlink` inside your application folder, not inside the library's one.
+`rlink` only copies the build and not the node_modules of cozy-ui, so you have to install a version of cozy-ui before making a `rlink`.
 
 ```bash
 cd my-app
@@ -128,8 +140,11 @@ yarn start
 
 All your modifications in your local Cozy UI will now be visible in your application!
 
+### Making a demo when creating a pull request
+
 When sending a PR, if your changes have graphic impacts, it is useful for the reviewers if
 you have deployed a version of the styleguidist containing your changes to your fork's repository.
+Don't forget to change `USERNAME` by yours.
 
 ```bash
 yarn build
@@ -140,24 +155,7 @@ yarn deploy:doc --repo git@github.com:USERNAME/cozy-ui.git
 
 ⚠️ If the `deploy:doc` failed, you need to checkout your dev branch by doing `git checkout -`
 
-## Guidelines for component development
-
-* Use material UI whenever possible
-* Override material UI components inside theme.js when necessary
-* Avoid stylus to style new components
-* Prefer withStyles / useStyles from material UI
-* Use semantic variables for colors
-
-```patch
-withStyles(theme => ({
-    root: {
--        backgroundColor: 'var(--paleGrey)',
-+        backgroundColor: theme.palette.background.default
-    }
-}))
-```
-
-## Unit testing
+### Unit testing
 
 Be aware that snapshots in unit tests use the transpiled version of cozy-ui. Therefore if you make changes and need to update the snapshots, you need to transpile first.
 
@@ -184,7 +182,7 @@ it('should close dialog', () => {
 })
 ```
 
-## UI regression testing
+### UI regression testing
 
 Components in `cozy-ui` are showcased with [React Styleguidist][]. To prevent UI regressions,
 for each PR, each component is screenshotted and compared to the master version to find any
@@ -194,12 +192,9 @@ If your app uses [React Styleguidist][], `cozy-ui` provides `rsg-screenshots`, a
 screenshots of your components (uses Puppeteer under the hood).
 
 ```bash
-yarn add cozy-ui
-# The rsg-screenshots binary is now installed
+yarn add cozy-ui # The rsg-screenshots binary is now installed
 yarn build:doc:react # Build our styleguide, the output directory is docs/react
-rsg-screenshots --screenshot-dir screenshots/ --styleguide-dir docs/react
-# Each component in the styleguide will be screenshotted and saved inside the
-screenshots/ directory
+rsg-screenshots --screenshot-dir screenshots/ --styleguide-dir docs/react # Each component in the styleguide will be screenshotted and saved inside the screenshots/ directory
 ```
 
 See our [travis configuration](https://github.com/cozy/cozy-ui/blob/master/.travis.yml) for more information.
