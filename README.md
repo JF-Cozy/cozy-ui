@@ -92,6 +92,10 @@ If you want to add a new component, you must follow these steps:
 * If necessary you can add snapshots for it by modifying `react/examples.spec.jsx` and updating them `yarn build && yarn test -u`
 * Remember to propagate the possible `ref` with `React.forwardRef`. [See forwardRef documentation](https://en.reactjs.org/docs/forwarding-refs.html)
 
+### Rename/Move a component
+
+When renaming or moving a Cozy-UI component, it may cause a breaking change. In this case, you should provide a codemod as much as possible to fix it.
+
 ### Guidelines for component development
 
 * Use material UI whenever possible
@@ -104,11 +108,9 @@ If you want to add a new component, you must follow these steps:
 If you want to add a new icon to cozy-ui, you must follow these steps:
 
 * First verify that the SVG doesn't have any `fill` or `fill-opacity` properties. Remove them if necessary
-* Add the SVG in the `assets/icons` folder
-* Optimize it with `yarn optimizeIcons`
-* Generate the react component by running
-  * `yarn makeSvgr assets/icons/[new icons folder]` or
-  * `yarn makeSvgr assets/icons/[new icon folder]/[new icon file name]`
+* Add the SVG in the `assets/icons/[ui || illus]` folder
+* Optimize it with `yarn svgo assets/icons/[ui || illus]/[new icon file name]`
+* Generate the react component by running `yarn makeSvgr assets/icons/[ui || illus]/[new icon file name]`
 * Update the documentation by adding the icon in `react/Icon/Readme.md` inside `SVGr icons` and `Available UI icons` sections
 * Don't forget to check the icon's color on different theme (inverted, etc.)
 * Update the tests by running `yarn sprite && yarn build && yarn test -u`
@@ -117,7 +119,6 @@ If you want to add a new icon to cozy-ui, you must follow these steps:
 
 Sometimes, you want to develop on a component, from the context of an app.
 Then you need to link cozy-ui with `yarn link`. Since `cozy-ui` is transpiled, when linking you must first `yarn release`. If you change the icons, or the palette, you must run `yarn release` again.
-
 
 ```bash
 cd cozy-ui
