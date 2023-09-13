@@ -9229,7 +9229,6 @@ body {
   background-color: var(--paleGrey);
   color: var(--silver);
   position: relative;
-  z-index: var(--zIndex-low);
 }
 .c-avatar--PpDI- svg {
   width: 50%;
@@ -14790,24 +14789,6 @@ body {
 @media (max-width: 48rem) {
 }
 
-.BarButton--3z5Er {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-}
-:root {
-  --barIconColor: var(--coolGrey);
-  --barIconColorDisabled: var(--silver);
-}
-.BarButtonIcon--1pSOT {
-  color: var(--barIconColor);
-}
-.BarButton--disabled--5e3Ll .BarButtonIcon--1pSOT {
-  color: var(--barIconColorDisabled);
-}
-
 .filePickerBreadcrumb-previousPath--3LKJH {
   color: var(--actionColorActive);
   cursor: pointer;
@@ -16467,6 +16448,17 @@ progress.upload-queue-progress--1CmN- {
   background: var(--paperBackgroundColor);
 }
 
+.c-file-path--XvgNN {
+  display: block;
+  color: var(--secondaryTextColor);
+  font-size: 0.75rem;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .viewer-imageviewer--26k0p,
 .viewer-noviewer--auG-6,
 .viewer-audioviewer--1OQPB,
@@ -16613,6 +16605,24 @@ progress.upload-queue-progress--1CmN- {
   background: var(--overlay);
   visibility: visible;
   transition: opacity 0.3s, visibility 0s ease-out;
+}
+
+.BarButton--3z5Er {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+:root {
+  --barIconColor: var(--coolGrey);
+  --barIconColorDisabled: var(--silver);
+}
+.BarButtonIcon--1pSOT {
+  color: var(--barIconColor);
+}
+.BarButton--disabled--5e3Ll .BarButtonIcon--1pSOT {
+  color: var(--barIconColorDisabled);
 }
 
 .BarTitle--I5r2e {
@@ -18753,17 +18763,6 @@ progress.upload-queue-progress--1CmN- {
   .FigureBlock--YyBoL {
     font-size: 0.7em;
   }
-}
-
-.c-file-path--XvgNN {
-  display: block;
-  color: var(--secondaryTextColor);
-  font-size: 0.75rem;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .c-file-input--YNZSh {
