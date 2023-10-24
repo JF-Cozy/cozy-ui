@@ -10159,6 +10159,11 @@ body {
   text-align: center;
   max-width: 100%;
 }
+.c-empty--centered--2ijsY {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .c-empty-img--2GC4d {
   display: block;
   margin: 0 auto 1rem;
