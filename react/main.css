@@ -491,11 +491,6 @@ body {
     overflow: visible;
   }
 }
-html,
-body {
-  background-color: var(--paperBackgroundColor);
-  color: var(--primaryTextColor);
-}
 .u-visuallyhidden {
   position: absolute !important;
   border: 0 !important;
@@ -7090,11 +7085,6 @@ body {
     overflow: visible;
   }
 }
-html,
-body {
-  background-color: var(--paperBackgroundColor);
-  color: var(--primaryTextColor);
-}
 @-moz-keyframes spin--29uW_ {
   from {
     transform: rotate(0deg);
@@ -8522,11 +8512,6 @@ body {
     overflow: visible;
   }
 }
-html,
-body {
-  background-color: var(--paperBackgroundColor);
-  color: var(--primaryTextColor);
-}
 [data-input=radio],
 [data-input=checkbox] {
   display: flex;
@@ -8636,7 +8621,7 @@ body {
 }
 .c-modal-container--1AAl5 {
   position: relative;
-  z-index: var(--zindex-modal);
+  z-index: var(--zIndex-modal);
 }
 .c-modal-wrapper--y79-C {
   position: fixed;
@@ -14969,11 +14954,6 @@ body {
     overflow: visible;
   }
 }
-html,
-body {
-  background-color: var(--paperBackgroundColor);
-  color: var(--primaryTextColor);
-}
 @-moz-keyframes spin--2qpxt {
   from {
     transform: rotate(0deg);
@@ -15672,6 +15652,8 @@ body {
   max-width: 100%;
   width: 100%;
   height: 100%;
+  background-color: var(--paperBackgroundColor);
+  color: var(--primaryTextColor);
 }
 .o-layout--3TSz9 main,
 .o-layout-2panes--1CDQw main {
@@ -18997,11 +18979,6 @@ body {
   [role=application] {
     overflow: visible;
   }
-}
-html,
-body {
-  background-color: var(--paperBackgroundColor);
-  color: var(--primaryTextColor);
 }
 @-moz-keyframes spin--1yERN {
   from {
