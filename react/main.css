@@ -6653,7 +6653,7 @@ body {
   background-color: #f52d2d;
 }
 .c-btn--secondary--1hLVM {
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--black);
   border-color: var(--silver);
 }
@@ -6669,7 +6669,7 @@ body {
 .c-btn--secondary--1hLVM[disabled]:hover,
 .c-btn--secondary--1hLVM[aria-disabled=true]:hover {
   border-color: var(--silver);
-  background-color: #fff;
+  background-color: var(--white);
 }
 .c-btn--danger-outline--BCng5 {
   background-color: var(--white);
@@ -10106,15 +10106,15 @@ body {
   font-weight: bold;
 }
 .c-alert--error--g5tIs {
-  color: #fff;
+  color: var(--white);
   background-color: var(--errorColor);
 }
 .c-alert--success--2DGDO {
-  color: #fff;
+  color: var(--white);
   background-color: var(--successColor);
 }
 .c-alert--info--2EDwe {
-  color: #fff;
+  color: var(--white);
   background-color: var(--slateGrey);
 }
 
@@ -21928,7 +21928,7 @@ body {
   background-color: var(--primaryColor);
 }
 .c-btn-client--2ZSQt {
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--black);
   border-color: var(--silver);
 }
@@ -21944,7 +21944,7 @@ body {
 .c-btn-client--2ZSQt[disabled]:hover,
 .c-btn-client--2ZSQt[aria-disabled=true]:hover {
   border-color: var(--silver);
-  background-color: #fff;
+  background-color: var(--white);
 }
 .c-btn-client--2ZSQt {
   display: flex;
