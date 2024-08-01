@@ -9234,7 +9234,7 @@ body {
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
     padding-bottom: env(safe-area-inset-bottom);
-    min-height: calc(100vh - 3rem - 3rem);
+    min-height: calc(100vh - var(--sidebarHeight) - 3rem);
   }
   .o-layout--3TSz9 main,
   .o-layout-2panes--1CDQw main,
@@ -9499,7 +9499,7 @@ body {
 
 .SquareAppIcon-wrapper--2SEuM {
   box-sizing: border-box;
-  background-color: var(--paperBackgroundColor);
+  background-color: var(--white);
   border-radius: 0.75rem;
   height: 4rem;
   width: 4rem;
@@ -10146,8 +10146,8 @@ progress.upload-queue-progress--1CmN- {
 }
 @media (max-width: 63.938rem) {
   .viewer-wrapper--2GIXH {
-    color: var(--charcoalGrey);
-    background: var(--white);
+    color: var(--primaryTextColor);
+    background: var(--paperBackgroundColor);
   }
 }
 
