@@ -636,6 +636,9 @@ body {
 .u-bg-white {
   background-color: var(--white) !important;
 }
+.u-bg-transparent--3__Oi {
+  background-color: transparent !important;
+}
 .u-bdrs-0 {
   border-radius: 0 !important;
 }
@@ -656,6 +659,12 @@ body {
 }
 .u-bdrs-6 {
   border-radius: 0.75rem !important;
+}
+.u-bdrs-7 {
+  border-radius: 0.875rem !important;
+}
+.u-bdrs-8 {
+  border-radius: 1rem !important;
 }
 .u-bdrs-circle {
   border-radius: 100% !important;
@@ -687,6 +696,12 @@ body {
   }
   .u-bdrs-6-t {
     border-radius: 0.75rem !important;
+  }
+  .u-bdrs-7-t {
+    border-radius: 0.875rem !important;
+  }
+  .u-bdrs-8-t {
+    border-radius: 1rem !important;
   }
   .u-bdrs-circle-t {
     border-radius: 100% !important;
@@ -720,6 +735,12 @@ body {
   .u-bdrs-6-s {
     border-radius: 0.75rem !important;
   }
+  .u-bdrs-7-s {
+    border-radius: 0.875rem !important;
+  }
+  .u-bdrs-8-s {
+    border-radius: 1rem !important;
+  }
   .u-bdrs-circle-s {
     border-radius: 100% !important;
   }
@@ -751,6 +772,12 @@ body {
   }
   .u-bdrs-6-m {
     border-radius: 0.75rem !important;
+  }
+  .u-bdrs-7-m {
+    border-radius: 0.875rem !important;
+  }
+  .u-bdrs-8-m {
+    border-radius: 1rem !important;
   }
   .u-bdrs-circle-m {
     border-radius: 100% !important;
@@ -2498,6 +2525,9 @@ body {
 }
 .u-shake--jk9eC {
   animation-name: shake--2YFRJ;
+}
+.u-elevation-0--2pGVx {
+  box-shadow: none !important;
 }
 .u-elevation-1--3BDa_ {
   box-shadow: 0 4px 12px 0 rgba(0,0,0,0.08);
@@ -7570,13 +7600,17 @@ body {
   margin: 0;
 }
 .c-apptitle-light--49VIZ {
-  fill: 'black';
+  fill: var(--black) !important;
 }
 .c-apptitle-dark--13RM5 {
-  fill: 'white';
+  fill: var(--white) !important;
 }
 .c-apptitle-app-icon--oQp8q {
   margin-right: 4px;
+}
+.c-apptitle-home-icon--1xJsd {
+  margin-top: 5px;
+  height: 26px;
 }
 
 .c-circle--1DuMR {
@@ -9570,7 +9604,6 @@ body {
 
 .SquareAppIcon-wrapper--4P3Cx {
   box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.09) 100%), rgba(255,251,254,0.8);
   border-radius: 100%;
   height: 4rem;
   width: 4rem;
@@ -9581,6 +9614,12 @@ body {
     height: 3rem;
     width: 3rem;
   }
+}
+.SquareAppIcon-wrapper--light--3LfPB {
+  background: linear-gradient(0deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.09) 100%), rgba(255,251,254,0.8);
+}
+.SquareAppIcon-wrapper--dark--kRx3L {
+  background: linear-gradient(0deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.09) 100%), #2c3039;
 }
 .SquareAppIcon-icon-container--grFij {
   display: flex;
