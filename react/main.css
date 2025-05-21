@@ -8432,6 +8432,11 @@ body {
   margin: 0;
 }
 
+.icon-withPath--1IcPC {
+  float: left;
+  top: 4px;
+}
+
 .container--2Eg5o {
   position: relative;
   box-sizing: border-box;
@@ -9611,8 +9616,8 @@ body {
 }
 @media (max-width: 48rem) {
   .SquareAppIcon-wrapper--2SEuM {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
   }
 }
 .SquareAppIcon-wrapper--light--2iR5Y {
@@ -9631,7 +9636,7 @@ body {
 }
 @media (max-width: 48rem) {
   .SquareAppIcon-icon-container--39MRl {
-    padding: 0.5rem;
+    padding: 0.625rem;
   }
 }
 .SquareAppIcon-icon-container--39MRl svg,
