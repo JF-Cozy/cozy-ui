@@ -8671,149 +8671,6 @@ body {
   flex: 0 0 auto;
 }
 
-.Sections__section--2onYy {
-  margin-bottom: 4rem;
-}
-
-.Dropdown__icon--19QZN {
-  padding: 0 0.5rem;
-}
-@media (max-width: 48rem) {
-  .Dropdown--afcWb .Select__control--3-04c {
-    padding: 0.5rem 0.5rem 0.5rem 0.2rem;
-    border-radius: 0;
-    height: 2.75rem;
-  }
-  .Dropdown--afcWb .Select__menu--XLfYX {
-    top: 2rem;
-  }
-  .Dropdown--afcWb > div {
-    max-width: none;
-  }
-}
-
-.select--disabled--1W3en {
-  cursor: not-allowed;
-  background-color: var(--actionColorDisabledBackground);
-  color: var(--actionColorDisabled);
-}
-.select--disabled--1W3en:hover,
-.select--disabled--1W3en:focus {
-  border: 0.063rem solid var(--borderMainColor);
-}
-.select--fullwidth--2l_xM {
-  max-width: 100%;
-}
-.select--fullwidth--2l_xM {
-  padding-right: 2.375rem;
-}
-.select--disabled--1W3en:hover,
-.select--disabled--1W3en:focus {
-  border-width: 0;
-}
-@media (max-width: 48rem) {
-}
-@media (max-width: 48rem) {
-}
-.select-control__input--1xDlj {
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-.select--autowidth--16AEp {
-  max-width: 32rem;
-}
-.select--fullwidth--2l_xM {
-  padding-right: 0;
-}
-.select-option--ov_IT {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.5rem;
-  border-left: 0.25rem solid transparent;
-  color: var(--primaryTextColor);
-  background-color: var(--paperBackgroundColor);
-  transition: all 0.2s ease-out;
-  white-space: normal /* otherwise the tick can be wrongly placed in Firefox */;
-}
-.select-option--ov_IT:hover:not(.select-option--disabled--1du57) {
-  background-color: var(--actionColorSelected);
-  cursor: pointer;
-}
-.select-option--ov_IT:hover:not(.select-option--disabled--1du57) .select-option__actions--2WOjb {
-  opacity: 1;
-}
-.select-option--focused--1Vpjv:not(.select-option--disabled--1du57) {
-  background-color: var(--actionColorHover);
-}
-.select-option--selected--R3_ES {
-  background-color: var(--actionColorSelected);
-  border-left-color: var(--primaryColor);
-}
-.select-option--disabled--1du57 {
-  color: var(--disabledTextColor);
-  cursor: not-allowed;
-}
-.select-option__checkbox--15WVE {
-  margin-right: 0.5rem;
-  vertical-align: top;
-}
-.select-option__label--1Xi5R {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-.select-option__checkmark--ChXXs {
-  width: 2rem;
-}
-.select-option__actions--2WOjb {
-  opacity: 0;
-  white-space: nowrap;
-  transition: opacity 0.2s ease-out;
-}
-@media (max-width: 63.938rem) {
-  .select-option__actions--2WOjb {
-    opacity: 1;
-  }
-}
-.select__overlay--3H8Jy::before {
-  content: '\A0';
-  width: 200vw;
-  height: 200vh;
-  top: -50vh;
-  left: -50vh;
-  display: block;
-  position: fixed;
-}
-.MenuList--1H_pH {
-  display: flex;
-  flex-direction: column;
-}
-.Group--J6s7k,
-.FixedGroup--2izTc {
-  overflow-y: auto;
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-.FixedGroup--2izTc {
-  flex-shrink: 0;
-  border-top: 1px solid var(--borderMainColor);
-}
-
-.AppsSection--3WHhE {
-  margin-bottom: 1rem;
-}
-.AppsSection__list--2Uy0E {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
 @media (max-width: 48rem) {
 }
 .Table--39nEw {
@@ -9011,6 +8868,209 @@ body {
 @media (max-width: 48rem) {
 }
 @media (max-width: 48rem) {
+}
+
+.contact-form-field__wrapper--39a5x {
+  width: calc(100% - 3rem);
+}
+
+.menu--120ui {
+  min-width: fit-content;
+}
+
+.container--1ById {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: var(--primaryTextColor);
+}
+.contact-group-creation-divider--3txmu {
+  width: 100%;
+  border-top: 1px solid var(--dividerColor);
+}
+.contact-group-create-div-icon--aUC-_ {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+/*since we keep the existing style of
+react-select for the menu and we only
+want to override width & zindex... important
+is important. Right positionning is just set,
+it overrides nothing so there's no need for
+!important */
+.react-select__menu {
+  width: 24rem !important;
+  z-index: 100000 !important;
+  right: 0;
+}
+@media (max-width: 48rem) {
+  .react-select__menu {
+    top: auto !important;
+    width: 100% !important;
+  }
+}
+.react-select__container {
+  display: inline-block;
+  vertical-align: middle;
+}
+.react-select__menu-notice--no-options {
+  color: var(--primaryTextColor);
+  margin-left: 0.5rem !important;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.react-select__menu-list {
+  text-align: initial;
+}
+@media (max-width: 48rem) {
+  .react-select__menu-list {
+    max-width: inherit !important;
+  }
+}
+
+.select--disabled--1W3en {
+  cursor: not-allowed;
+  background-color: var(--actionColorDisabledBackground);
+  color: var(--actionColorDisabled);
+}
+.select--disabled--1W3en:hover,
+.select--disabled--1W3en:focus {
+  border: 0.063rem solid var(--borderMainColor);
+}
+.select--fullwidth--2l_xM {
+  max-width: 100%;
+}
+.select--fullwidth--2l_xM {
+  padding-right: 2.375rem;
+}
+.select--disabled--1W3en:hover,
+.select--disabled--1W3en:focus {
+  border-width: 0;
+}
+@media (max-width: 48rem) {
+}
+@media (max-width: 48rem) {
+}
+.select-control__input--1xDlj {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.select--autowidth--16AEp {
+  max-width: 32rem;
+}
+.select--fullwidth--2l_xM {
+  padding-right: 0;
+}
+.select-option--ov_IT {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  border-left: 0.25rem solid transparent;
+  color: var(--primaryTextColor);
+  background-color: var(--paperBackgroundColor);
+  transition: all 0.2s ease-out;
+  white-space: normal /* otherwise the tick can be wrongly placed in Firefox */;
+}
+.select-option--ov_IT:hover:not(.select-option--disabled--1du57) {
+  background-color: var(--actionColorSelected);
+  cursor: pointer;
+}
+.select-option--ov_IT:hover:not(.select-option--disabled--1du57) .select-option__actions--2WOjb {
+  opacity: 1;
+}
+.select-option--focused--1Vpjv:not(.select-option--disabled--1du57) {
+  background-color: var(--actionColorHover);
+}
+.select-option--selected--R3_ES {
+  background-color: var(--actionColorSelected);
+  border-left-color: var(--primaryColor);
+}
+.select-option--disabled--1du57 {
+  color: var(--disabledTextColor);
+  cursor: not-allowed;
+}
+.select-option__checkbox--15WVE {
+  margin-right: 0.5rem;
+  vertical-align: top;
+}
+.select-option__label--1Xi5R {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.select-option__checkmark--ChXXs {
+  width: 2rem;
+}
+.select-option__actions--2WOjb {
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease-out;
+}
+@media (max-width: 63.938rem) {
+  .select-option__actions--2WOjb {
+    opacity: 1;
+  }
+}
+.select__overlay--3H8Jy::before {
+  content: '\A0';
+  width: 200vw;
+  height: 200vh;
+  top: -50vh;
+  left: -50vh;
+  display: block;
+  position: fixed;
+}
+.MenuList--1H_pH {
+  display: flex;
+  flex-direction: column;
+}
+.Group--J6s7k,
+.FixedGroup--2izTc {
+  overflow-y: auto;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+.FixedGroup--2izTc {
+  flex-shrink: 0;
+  border-top: 1px solid var(--borderMainColor);
+}
+
+.Sections__section--2onYy {
+  margin-bottom: 4rem;
+}
+
+.Dropdown__icon--19QZN {
+  padding: 0 0.5rem;
+}
+@media (max-width: 48rem) {
+  .Dropdown--afcWb .Select__control--3-04c {
+    padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+    border-radius: 0;
+    height: 2.75rem;
+  }
+  .Dropdown--afcWb .Select__menu--XLfYX {
+    top: 2rem;
+  }
+  .Dropdown--afcWb > div {
+    max-width: none;
+  }
+}
+
+.AppsSection--3WHhE {
+  margin-bottom: 1rem;
+}
+.AppsSection__list--2Uy0E {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .filePickerBreadcrumb-previousPath--3LKJH {
