@@ -6535,29 +6535,6 @@ body {
   color: var(--coolGrey);
 }
 
-.divider--SuA5q {
-  align-items: center;
-  display: flex;
-}
-.divider--SuA5q::after,
-.divider--SuA5q::before {
-  content: '';
-  height: 1px;
-  background-color: var(--dividerColor);
-}
-.divider--SuA5q::before {
-  display: none;
-  margin-right: 0.5rem;
-}
-.divider--SuA5q::after {
-  flex: 1;
-  margin-left: 0.5rem;
-}
-.center--3K8dw::before {
-  display: block;
-  flex: 1;
-}
-
 html {
   --primaryFont: Inter, Lato, sans-serif;
 }
@@ -7710,6 +7687,29 @@ body {
 .c-banner-buttons--3sLgG button {
   margin: 0;
   min-width: 3rem;
+}
+
+.divider--SuA5q {
+  align-items: center;
+  display: flex;
+}
+.divider--SuA5q::after,
+.divider--SuA5q::before {
+  content: '';
+  height: 1px;
+  background-color: var(--dividerColor);
+}
+.divider--SuA5q::before {
+  display: none;
+  margin-right: 0.5rem;
+}
+.divider--SuA5q::after {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+.center--3K8dw::before {
+  display: block;
+  flex: 1;
 }
 
 .Stack--m--1tSpV > * + * {
