@@ -19,13 +19,6 @@ object-assign
  */
 
 /*!
- * Chart.js v3.7.1
- * https://www.chartjs.org
- * (c) 2022 Chart.js Contributors
- * Released under the MIT License
- */
-
-/*!
  * Determine if an object is a Buffer
  *
  * @author   Feross Aboukhadijeh <https://feross.org>
@@ -40,20 +33,6 @@ object-assign
  */
 
 /*!
- * mime-db
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2015-2022 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-/*!
- * mime-types
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
- */
-
-/*!
  * regjsgen 0.5.0
  * Copyright 2014-2018 Benjamin Tan <https://bnjmnt4n.now.sh/>
  * Available under MIT license <https://github.com/bnjmnt4n/regjsgen/blob/master/LICENSE>
@@ -65,11 +44,6 @@ object-assign
  * Copyright (c) 2014-2015, Jon Schlinkert.
  * Licensed under the MIT License.
  */
-
-/*!
- 2022 Jason Mulligan <jason.mulligan@avoidwork.com>
- @version 8.0.7
-*/
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -89,14 +63,6 @@ PERFORMANCE OF THIS SOFTWARE.
 /*! clipboard-copy. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
 /*! https://mths.be/regenerate v1.3.3 by @mathias | MIT license */
-
-/**
- *
- *
- * @author Jerry Bendy <jerry@icewingcc.com>
- * @licence MIT
- *
- */
 
 /**
  * A better abstraction over CSS.
@@ -161,15 +127,6 @@ PERFORMANCE OF THIS SOFTWARE.
  */
 
 /** @license React v17.0.1
- * react-is.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-/** @license React v17.0.2
  * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
